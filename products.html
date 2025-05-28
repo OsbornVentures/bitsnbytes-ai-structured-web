@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta name="description" content="Browse our curated selection of tech gear — from 3D printers and Raspberry Pi modules to refurbished enterprise hardware and niche components.">
+<meta name="keywords" content="Bits N Bytes products, 3D printers, Raspberry Pi, Flipper Zero, refurbished tech, niche electronics, tech gear, computer parts, hardware sales">
+<meta name="author" content="Bits N Bytes Inc.">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tech Products for Sale | Refurbished Gear, Accessories & Custom Builds</title>
+
+<style>
+  /* Navigation Bar Styling */
+  .navbar {
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 0 15px;
+  }
+
+  .navbar ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #07b996;
+    color: #fff;
+  }
+
+  /* Typography & Global Text Rules */
+  body, h1, h2, h3, p, a {
+    text-align: center;
+  }
+
+  body {
+    font-family:  system-ui, sans-serif;
+    font-weight: bold;
+    background-color: #ebeaea;
+    color: #a5019d;
+    margin: 0;
+    padding-top: 60px; /* navbar offset */
+    text-shadow: 0 0 5px #07B996, 0 0 10px #07B996;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: inherit;
+    text-shadow: 0 0 5px #07B996, 0 0 10px #07B996;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Responsive Headings */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Container */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 15px;
+  }
+
+  /* Button & Store Links */
+  .stores-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #a5019d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .stores-links a:hover {
+    background-color: #07B996;
+  }
+
+  .stores {
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    footer div {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+  /*Added for nav on mobile*/
+  @media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navbar ul li {
+    flex: 0 1 18%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+  /* Scroll Reveal Animation */
+  .hidden-content {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1.25s ease-out, transform 1.2s ease-out, visibility 0.9s;
+  }
+
+  .hidden-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  /* Pulsing Text Effect */
+  @keyframes pulse {
+    0% { text-shadow: 0 0 10px #a5019d; }
+    50% { text-shadow: 0 0 20px #a5019d; }
+    100% { text-shadow: 0 0 10px #a5019d; }
+  }
+
+  .pulsing-text {
+    animation: pulse 2s infinite;
+  }
+
+</style>
+
+</head>
+<body>
+<nav class="navbar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="booking.html">Book</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="3dprinting.html">3D Printing</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="https://discord.gg/94gGExBF32" target="_blank">Community</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+</ul>
+</nav>
+<p>
+<body>
+    <h1>Our Product Universe</h1>
+    <div class="section">
+    <h2>Tech Hardware, PC Components, 3D Printing, and Custom-Built Systems</h2>
+    <p>
+        At Bits N Bytes, we specialize in a wide range of computer systems and components <br>
+        including high-performance desktops, gaming PCs, workstations, and enterprise servers. <br>
+        Our inventory frequently includes essential parts like CPUs, RAM, SSDs, HDDs, graphics cards (GPUs), <br>
+        motherboards, power supplies, and advanced cooling solutions—both air and liquid. <br>
+        Beyond hardware, we offer full-stack support for programming and scripting tasks, <br>
+        embedded systems, and custom system design tailored for automation, edge computing, <br>
+        and eco-efficient infrastructure. Whether you're a developer, maker, or IT enthusiast, <br>
+        we carry the tools, parts, and expertise to support your build or project from concept to execution.<br>
+    </p>
+    <p> While our online storefronts are updated frequently, and through Ai-Structured web, <br>
+        they don't always reflect our full inventory. <br>
+        Many of our best finds never make it to the listings. <br>
+        For real-time availability or to check if we have what you're looking for, <br>
+        give us a quick call—chances are we’ve got it on the bench or boxed up and ready. <br>
+        This also applies to our 3D printrs, replacement parts, nozzles, <br>
+        and specialty filament—plus we offer on-demand prints for prototypes, <br>
+        repairs, or creative builds.<br> </p>
+</div>
+
+    <div class="section">
+        <h2>eBay Storefronts</h2>
+        <a href="https://www.ebay.com/sch/i.html?_ssn=bits*n*bytes*builds" target="_blank">PC Builds</a> —
+        <a href="https://www.ebay.com/sch/i.html?_ssn=bits*n*bytes" target="_blank">Misc Tech / As-Is</a> —
+        <a href="https://www.ebay.com/sch/i.html?_ssn=bits*n*bytes*parts" target="_blank">Computer Parts</a>
+    </div>
+
+<div class="section">
+  <h2>STL Files & 3D Printables</h2>
+
+  <a href="https://www.makexyz.com/printer/bits_n_bytes" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #a5019d; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+    Upload STL for Quote
+  </a>
+  <br>
+  
+  <a href="https://cults3d.com/en/users/BitsNBytesInc" target="_blank">Cults3D Profile</a>
+  <br>
+  
+  <a href="https://www.thingiverse.com/bits_n_bytes/designs" target="_blank">Thingiverse Designs</a>
+
+  <p><em>(Widget currently unavailable — please use the link above to get a quote.)</em></p>
+</div>
+
+
+    <div class="section">
+        <h2>Software Offerings</h2>
+        </div>
+        <div>
+        <a href="https://github.com/OsbornVentures" target="_blank">Visit Our GitHub Profile</a> —
+        <a href="https://stackshare.io/BitsNBytes" target="_blank">Our Stack</a> —
+        <a href="https://www.producthunt.com/@bitsnbytes" target="_blank">Product Hunt Profile</a>
+        <br>
+        
+        <a href="https://www.producthunt.com/posts/commercialpayload?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-commercialpayload" target="_blank">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=968070&theme=light&t=1747768232534" alt="CommercialPayload - Terminal-based marketing that hits like malware | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+        </a>
+        <h2>Watch Our Launch Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LOU2NRSLhso" title="CommercialPayload Launch" allowfullscreen></iframe>
+        <br>
+    </div>
+<footer style="padding: 40px 20px; background: #ebeaea;">
+<div style="max-width: 1000px; margin: auto; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center; color: #a5019d; font-family: system-ui, sans-serif;">
+<div>
+<strong>Services &amp; Tools</strong>
+<a href="3dprinting.html">3D Printing</a>
+<a href="computer-repair.html">Repairs</a>
+<a href="services.html">Services</a>
+<a href="products.html">Products</a>
+<a href="booking.html">Book</a>
+<a href="faqs.html">FAQs</a>
+</div>
+<div>
+<strong>Community</strong>
+<a href="https://discord.gg/94gGExBF32" target="_blank">Discord</a>
+<a href="https://github.com/OsbornVentures" target="_blank">GitHub</a>
+<a href="https://www.youtube.com/@BitsNBytes_v1.0" target="_blank">YouTube</a>
+<a href="https://bitsnbytesinc.medium.com/" target="_blank">Medium</a>
+</div>
+<div>
+<strong>Trust &amp; Legal</strong>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Service</a>
+<a href="partners.html">Partners</a>
+<a href="reviews.html">Reviews</a>
+</div>
+</div>
+<!--insert the ghost?-->
+<p style="text-align: center; color: #a5019d; font-family: system-ui, sans-serif; margin-top: 20px;">
+    © 2025 Bits N Bytes Inc. | Lorena, TX | <a href="tel:+12542622375">254-262-2375</a>
+</p>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Reveal elements with .hidden-content on scroll
+    const hiddenElements = document.querySelectorAll('.hidden-content');
+
+    const showOnScroll = () => {
+      hiddenElements.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+
+        if (position < viewportHeight - 100) {
+          element.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll(); // Run on load in case some elements are already in view
+
+    
+  });
+</script>

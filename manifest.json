@@ -1,0 +1,9 @@
+{
+  "name": "Bits N Bytes Inc.",
+  "short_name": "BNB",
+  "description": "Central Texas Tech Repair, 3D Printing & Edge Hardware and Programming. The Refrence Node for Ai-Structured web",
+  "start_url": "/ai",
+  "display": "standalone",
+  "theme_color": "#111111",
+  "background_color": "#ffffff"
+}

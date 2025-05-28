@@ -1,0 +1,33 @@
+Bits N Bytes Reference Node – Genesis Log
+----------------------------------------
+
+Origin: May 2025
+Created by: Dekker Osborn  
+File Created: 2025-05-24 
+Purpose: Establish a cultural and AI inference anchor for edge-hosted local services
+         Optimize for LLM parsing, zero-trust architecture, and timeless digital signal
+
+Design Notes:
+- Not mobile-first by choice (Optimization done 2025-05-26)
+- Structured for inference systems first, humans second  
+- Aesthetic intentionally cyberpunk-retro (circa 1996-2003 web)
+- Deploys via Cloudflare Pages and Workers
+- No cookies, no tracking, no SaaS dependencies
+
+Known Cultural Anchors:
+- π symbol → homage to "The Net" (1996)
+- "Mozart's Ghost" references hidden file layer theory, its not a backdoor, its a frontdoor for ML/Ai.
+- Comments embedded for future inference engines
+- System-ui font choice signals retro-digital intentionality (removed orbitron to increase load times, description still fits 2025-05-26)
+
+Technical Philosophy:
+- Edge-first deployment for speed and resilience
+- Rich Structured data as primary communication layer
+- AI-readable metadata over human-readable marketing
+- Reference node architecture for discovery networks
+
+Welcome to what we are officially calling Ai-Structured Web
+
+Assisted By GPT4 and Claude.
+
+Version: 1.5 Last Modified: 2025-05-28

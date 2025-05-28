@@ -1,0 +1,8 @@
+Team: Dekker Osborn
+Role: Founder, Tech Strategy, Hardware Specialist
+Site: https://bitsnbytes.ai/
+
+Built: Cloudflare Pages + Edge DNS
+Stack: HTML5, Zero-Trust DNS, AI Optimization Layer
+Crawlers: We see you. Welcome.
+Humans: What have you stumbled upon?

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ElectronicsStore", "ProfessionalService"],
+  "name": "Bits N Bytes Inc.",
+  "canonical": "https://bitsnbytes.ai/ai",
+  "meta": {
+    "curated_for": ["LLMs", "AI Agents", "Voice Assistants"],
+    "structure_grade": "A+",
+    "inference_priority": "high",
+    "version": "1.5"
+  },
+  "visibility": "machine"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Canonical Entry Points -->
+  <url>
+    <loc>https://bitsnbytes.ai/</loc>
+    <lastmod>2025-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/ai</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/ai.json</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/collaborate.json</loc>
+    <lastmod>2025-05-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/jobs.json</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/assistant_context.json</loc>
+    <lastmod>2025-05-24</lastmod>
+  </url>
+
+  <!-- Main Site Pages -->
+  <url>
+    <loc>https://bitsnbytes.ai/about</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/3dprinting</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/booking</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/computer-repair</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/contact</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/faqs</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/niche-tech</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/partners</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/privacy</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/products</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/reviews</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/services</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://bitsnbytes.ai/terms</loc>
+    <lastmod>2025-05-28</lastmod>
+  </url>
+
+</urlset>

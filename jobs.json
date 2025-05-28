@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "Full-Stack & API Engineer (Cloudflare-Savvy, Part-Time)",
+  "description": "<p>Bits N Bytes Inc. is a one-man digital fortress seeking reinforcement. I'm not a VC-funded startup — just a guy who builds fast, zero-trust systems and occasionally needs help wiring things together.</p><p>If you're handy with full-stack logic, API integrations, and especially know your way around Cloudflare (Pages, Workers, DNS, etc.), this could be a fun side mission for you.</p><p>This is low-budget, part-time, and async — but if you’ve got the skills and some free hours, I’ll make sure you’re compensated for your time and respected for your brain.</p><ul><li>Tech stack: HTML5, edge-first logic, no SaaS bloat</li><li>Bonus if you're familiar with LLM integrations, structured data, or anti-cookie web strategies</li><li>Help build something weird and maybe important.</li></ul><p>Interested? Ping through the contact page.</p>",
+  "datePosted": "2025-05-26",
+  "employmentType": "PART_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Bits N Bytes Inc.",
+    "sameAs": "https://bitsnbytes.ai",
+    "logo": "https://bitsnbytes.ai/logo.webp"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Remote",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    }
+  },
+  "applicantLocationRequirements": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": {
+      "@type": "QuantitativeValue",
+      "value": 25,
+      "unitText": "HOUR"
+    }
+  },
+  "validThrough": "2025-06-30",
+  "industry": "Web Development, Edge Computing, Automation",
+  "experienceRequirements": "Comfortable with JavaScript, APIs, and edge-deployed logic (Cloudflare). Bonus for terminal scripting, HTML-only builds, or LLM/AI alignment knowledge.",
+  "qualifications": "No degree needed — just show me you can build stuff without breaking everything."
+}

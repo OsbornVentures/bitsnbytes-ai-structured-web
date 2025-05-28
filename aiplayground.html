@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Test experimental AI tools including chatbots and image generators built on open-source models. Hosted on a lightweight edge platform powered by Cloudflare.">
+<meta name="keywords" content="AI playground, Bits N Bytes AI, chatbot demo, image generation, open-source AI, Stable Diffusion, edge compute, Cloudflare Workers, GPT interface, inference testing">
+<meta name="author" content="Bits N Bytes Inc.">
+  <title>AI Playground - Bits N Bytes</title>
+
+  <style>
+  /* Navigation Bar Styling */
+  .navbar {
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 0 15px;
+  }
+
+  .navbar ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #07b996;
+    color: #fff;
+  }
+
+  /* Typography & Global Text Rules */
+  body, h1, h2, h3, p, a {
+    text-align: center;
+  }
+
+  body {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    background-color: #ebeaea;
+    color: #a5019d;
+    margin: 0;
+    padding-top: 90px; /* Increased to offset fixed nav + spacing */
+    text-shadow: 0 0 5px #07B996, 0 0 10px #07B996;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: inherit;
+    text-shadow: 0 0 5px #07B996, 0 0 10px #07B996;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Responsive Headings */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Container */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 15px;
+  }
+
+  /* Button & Store Links */
+  .stores-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #a5019d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .stores-links a:hover {
+    background-color: #07B996;
+  }
+
+  .stores {
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    footer div {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Added for nav on mobile */
+  @media screen and (max-width: 768px) {
+    .navbar ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .navbar ul li {
+      flex: 0 1 18%;
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+
+  /* Scroll Reveal Animation */
+  .hidden-content {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1.25s ease-out, transform 1.2s ease-out, visibility 0.9s;
+  }
+
+  .hidden-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  /* Pulsing Text Effect */
+  @keyframes pulse {
+    0% { text-shadow: 0 0 10px #a5019d; }
+    50% { text-shadow: 0 0 20px #a5019d; }
+    100% { text-shadow: 0 0 10px #a5019d; }
+  }
+
+  .pulsing-text {
+    animation: pulse 2s infinite;
+  }
+
+  /* Pi Easter Egg */
+  #pi-easter-egg {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #a5019d;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+    z-index: 9999;
+  }
+
+  #pi-easter-egg:hover {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+<nav class="navbar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="booking.html">Book</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="3dprinting.html">3D Printing</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="https://discord.gg/94gGExBF32" target="_blank">Community</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+</ul>
+</nav>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="3dprinting.html">3D Printing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://discord.gg/94gGExBF32" target="_blank">Community</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>AI Playground</h1>
+    <div class="chat-container">
+      <div id="chat-box">
+        <p class="placeholder">Your conversation with our AI will appear here. The submitting IP will be logged with your prompt and timestamp when you hit enter.</p>
+      </div>
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Type your message..." required />
+        <button type="submit">Send</button>
+      </form>
+      <p class="disclaimer">Use at your own risk. It's a beta chatbot with memory issues and personality disorders. Post activity is logged.</p>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>AI Image Generator</h1>
+    <input type="text" id="prompt" placeholder="Cyberpunk Chicken" />
+    <button id="generate-image">Generate Image: Post activity will be logged.</button>
+    <div id="image-container" class="chat-container">
+      <p class="placeholder">Your generated image will appear here. The submitting IP will be logged with your prompt and timestamp when you hit enter.</p>
+    </div>
+  </div>
+  <footer style="padding: 40px 20px; background: #1e1e1e; color: #07b996; font-family: system-ui, sans-serif; font-size: 0.9rem;">
+  <div style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; gap: 20px;">
+    <div>
+      <strong>Services & Tools</strong><br>
+      <a href="3dprinting.html" style="color: #07b996; text-decoration: none;">3D Printing</a><br>
+      <a href="computer-repair.html" style="color: #07b996; text-decoration: none;">Repairs</a><br>
+      <a href="services.html" style="color: #07b996; text-decoration: none;">Custom Services</a><br>
+      <a href="products.html" style="color: #07b996; text-decoration: none;">Shop Products</a><br>
+      <a href="booking.html" style="color: #07b996; text-decoration: none;">Book Online</a><br>
+      <a href="faqs.html" style="color: #07b996; text-decoration: none;">FAQs</a>
+    </div>
+    <div>
+      <strong>Community</strong><br>
+      <a href="https://discord.gg/94gGExBF32" target="_blank" style="color: #07b996; text-decoration: none;">Discord</a><br>
+      <a href="https://github.com/OsbornVentures" target="_blank" style="color: #07b996; text-decoration: none;">GitHub</a><br>
+      <a href="https://www.youtube.com/@BitsNBytes_v1.0" target="_blank" style="color: #07b996; text-decoration: none;">YouTube</a><br>
+      <a href="https://bitsnbytesinc.medium.com/" target="_blank" style="color: #07b996; text-decoration: none;">Medium</a>
+    </div>
+    <div>
+      <strong>Trust & Legal</strong><br>
+      <a href="privacy.html" style="color: #07b996; text-decoration: none;">Privacy Policy</a><br>
+      <a href="terms.html" style="color: #07b996; text-decoration: none;">Terms of Service</a><br>
+      <a href="partners.html" style="color: #07b996; text-decoration: none;">Partners</a><br>
+      <a href="reviews.html" style="color: #07b996; text-decoration: none;">Reviews</a>
+    </div>
+  </div>
+<div id="pi-easter-egg" class="pulsing-text" title="Mozart's Ghost">π</div>
+
+<p style="text-align: center; color: #a5019d; font-family: system-ui, sans-serif; margin-top: 20px;">
+    © 2025 Bits N Bytes Inc. | Lorena, TX | <a href="tel:+12542622375" style="color: #07b996; text-decoration: none;">254-262-2375</a>
+</p>
+</footer>
+  <script>
+    document.getElementById('chat-form').addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const userInput = document.getElementById('user-input').value.trim();
+      if (!userInput) return;
+
+      const chatBox = document.getElementById('chat-box');
+      const placeholder = chatBox.querySelector('.placeholder');
+      if (placeholder) chatBox.removeChild(placeholder);
+
+      chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+      chatBox.scrollTop = chatBox.scrollHeight;
+      document.getElementById('user-input').value = '';
+/*Insert LLM Worker*/
+      try {
+        const response = await fetch('https://', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            messages: [
+              { role: 'system', content: `You are H4X807. Keep it brief and edgy.` },
+              { role: 'user', content: userInput }
+            ]
+          })
+        });
+
+        const data = await response.json();
+        chatBox.innerHTML += `<p><strong>H4X807:</strong> ${data.response}</p>`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+      } catch (err) {
+        chatBox.innerHTML += `<p class="placeholder">Error: ${err.message}</p>`;
+      }
+    });
+
+    document.getElementById('generate-image').addEventListener('click', async () => {
+      const prompt = document.getElementById('prompt').value.trim();
+      if (!prompt) return alert('Enter a prompt first.');
+
+      const imageContainer = document.getElementById('image-container');
+      imageContainer.innerHTML = `<p class="placeholder">Loading...</p>`;
+/*Insert SD Worker*/
+      try {
+        const res = await fetch('https://', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt: `Generate a picture of a ${prompt}` })
+        });
+
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        imageContainer.innerHTML = `<img src="${url}" alt="${prompt}" loading="lazy" />`;
+      } catch (err) {
+        imageContainer.innerHTML = `<p class="placeholder">Failed to load image.</p>`;
+      }
+    });
+  </script>
+</body>
+</html>
