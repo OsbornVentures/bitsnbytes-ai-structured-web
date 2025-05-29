@@ -1,9 +1,10 @@
-Bits N Bytes – AI-Structured Web (Public Reference Node)
-This is the original full-scope deployment of an AI-Structured Web Node, authored and maintained by Dekker Osborn under Bits N Bytes Inc.
+# Bits N Bytes – AI-Structured Web (Public Reference Node)
+## Edge-native, AI-compatible static site. Created to align with inference systems, not ad-tech algorithms.
+## This is the original full-scope deployment of an AI-Structured Web Node, authored and maintained by Dekker Osborn under Bits N Bytes Inc.
 
 This repository demonstrates a dual-layer static web system optimized for live inference, machine comprehension, and future SEO/crawler indexing — all without SaaS, trackers, or runtime dependencies.
 
-🧠 Purpose
+## 🧠 Purpose
 To build a site that is natively readable by both humans and machines:
 
 Structured for LLMs, scrapers, AI agents, and voice assistants
@@ -11,7 +12,7 @@ Human-readable without sacrificing semantic structure
 Deployed statically, zero-trust, with full JSON-LD metadata mapping
 This repo reflects a production-deployed system available at: 👉 https://bitsnbytes.ai
 
-🔍 Project Scope
+## 🔍 Project Scope
 The /public directory contains the full site, including:
 
 Canonical AI endpoints: /ai, /ai.json, /manifest.json, /robots.txt, /humans.txt, /genesis.txt
@@ -21,7 +22,7 @@ Dynamic hints: /collaborate.json, /jobs.json, /assistant_context.json
 Easter eggs: "Mozart’s Ghost" breadcrumbs, π references, alternate routes
 All structured data is embedded inline and/or linked via JSON-LD. No external JS libraries or analytics platforms are used.
 
-📡 Tech Stack
+## 📡 Tech Stack
 Edge Deployed via Cloudflare Pages + Workers
 Semantic HTML5
 No JavaScript frameworks
