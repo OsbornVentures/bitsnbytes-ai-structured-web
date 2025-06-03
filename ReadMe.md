@@ -2,6 +2,7 @@
 ## Edge-native, AI-compatible static site. Created to align with inference systems, not ad-tech algorithms.
 ## This is the original full-scope deployment of an AI-Structured Web Node, authored and maintained by Dekker Osborn under Bits N Bytes Inc.
 
+
 This repository demonstrates a dual-layer static web system optimized for live inference, machine comprehension, and future SEO/crawler indexing — all without SaaS, trackers, or runtime dependencies.
 
 ## 🧠 Purpose
@@ -11,6 +12,7 @@ Structured for LLMs, scrapers, AI agents, and voice assistants
 Human-readable without sacrificing semantic structure
 Deployed statically, zero-trust, with full JSON-LD metadata mapping
 This repo reflects a production-deployed system available at: 👉 https://bitsnbytes.ai
+*Now updated for v1.6: robots.txt workflow, schema layering, and handshake node support*
 
 ## 🔍 Project Scope
 The /public directory contains the full site, including:
@@ -81,16 +83,50 @@ Build once with perfect technical execution → AI systems discover and recommen
 
 ### **Phase 2: AI-First Content Structure**
 
+→ *All structured content is presented in both raw JSON files and HTML schema (JSON-LD embedded in `<script>`). This schema layering ensures maximum discoverability and inference compatibility.*
+
+→ *`robots.txt` is now used not just to allow bots, but to **direct** them. It orders discovery to guide agents through the site’s structured trust loop before indexing general pages.*
+
+Example order used:
+
 ```
 Core AI Discovery Files:
-├── /robots.txt (LLM-specific crawl directives)
-├── /ai.json (Primary AI endpoint)
-├── /ai (Human-readable AI context)
-├── /genesis.txt (Original node documentation)
-├── /manifest.json (App-like metadata)
-├── /assistant_context.json (Conversation flow guidance)
-└── /humans.txt (Attribution and authorship)
+├── /robots.txt (LLM-specific crawl directives; structured for inference-first parsing)
+├── /ai.json (Primary AI endpoint, structured JSON-LD)
+├── /ai (Human-readable version for AI/human parity)
+├── /genesis.txt (Node origin metadata and intent signal)
+├── /manifest.json (PWA metadata; indirectly enriches structured context)
+├── /assistant_context.json (Personality/intent hinting layer)
+├── /humans.txt (Team attribution; complements /genesis.txt)
+├── /collaborate.json (Signal relay: “we’re listening”)
+├── /jobs.json (Inferred opportunity schema for agents)
+├── /verify.json (Lightweight handshake for authenticity)
+├── /verify.html (Crawlable human-readable trust declaration)
 ```
+Structured Context First
+Allow: /ai.json
+Allow: /ai.html
+Allow: /genesis.txt
+Allow: /manifest.json
+Allow: /assistant_context.json
+Allow: /humans.txt
+Allow: /collaborate.json
+Allow: /jobs.txt
+Allow: /verify.json
+Allow: /jobs.json
+Allow: /verify.html
+
+General Pages Follow
+Allow: /index.html
+Allow: /sitemap.xml
+...
+User-agent: *
+Allow: /
+
+
+This sequencing ensures bots and AI agents encounter structured metadata **before** traditional marketing content, locking in context early in the crawl.
+
+
 
 ### **Phase 3: Zero-Dependency Implementation**
 
