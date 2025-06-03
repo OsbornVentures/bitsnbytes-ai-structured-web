@@ -1,4 +1,5 @@
 ## License: CC BY-NC-ND 4.0 + Custom Addendum
+License: CC BY-NC-ND 4.0 + Custom Addendum
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view the license, visit: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
