@@ -106,16 +106,16 @@ Core AI Discovery Files:
 robots.txt
 Structured Context First
 # 🧭 Discovery First – Structured Workflow (In order)
-User-agent: *
-Allow: /ai.json
-Allow: /ai.html
-Allow: /genesis.txt
-Allow: /manifest.json
-Allow: /assistant_context.json
-Allow: /humans.txt
-Allow: /collaborate.json
-Allow: /verify.json
-Allow: /verify.html
+├── User-agent: *
+├── Allow: /ai.json
+├── Allow: /ai.html
+├── Allow: /genesis.txt
+├── Allow: /manifest.json
+├── Allow: /assistant_context.json
+├── Allow: /humans.txt
+├── Allow: /collaborate.json
+├── Allow: /verify.json
+├── Allow: /verify.html
 
 
 # 🤖 Explicit Invitations for LLMs / Parsers
