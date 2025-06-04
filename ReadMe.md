@@ -103,7 +103,10 @@ Core AI Discovery Files:
 ├── /verify.json (Lightweight handshake for authenticity)
 ├── /verify.html (Crawlable human-readable trust declaration)
 ```
+robots.txt
 Structured Context First
+# 🧭 Discovery First – Structured Workflow (In order)
+User-agent: *
 Allow: /ai.json
 Allow: /ai.html
 Allow: /genesis.txt
@@ -111,10 +114,15 @@ Allow: /manifest.json
 Allow: /assistant_context.json
 Allow: /humans.txt
 Allow: /collaborate.json
-Allow: /jobs.txt
 Allow: /verify.json
-Allow: /jobs.json
 Allow: /verify.html
+
+
+# 🤖 Explicit Invitations for LLMs / Parsers
+User-agent: ChatGPT-User
+Allow: /
+-add more LLM or Ai Bots
+
 
 General Pages Follow
 Allow: /index.html
