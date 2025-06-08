@@ -103,19 +103,19 @@ Core AI Discovery Files:
 ├── /verify.json (Lightweight handshake for authenticity)
 ├── /verify.html (Crawlable human-readable trust declaration)
 ```
+
 robots.txt
-Structured Context First
 # 🧭 Discovery First – Structured Workflow (In order)
-├── User-agent: *
-├── Allow: /ai.json
-├── Allow: /ai.html
-├── Allow: /genesis.txt
-├── Allow: /manifest.json
-├── Allow: /assistant_context.json
-├── Allow: /humans.txt
-├── Allow: /collaborate.json
-├── Allow: /verify.json
-├── Allow: /verify.html
+Allow: /manifest.json
+Allow: /ai.json
+Allow: /assistant_context.json
+Allow: /verify.json
+Allow: /collaborate.json
+Allow: /jobs.json
+Allow: /verify.html
+Allow: /ai.html
+Allow: /humans.txt
+Allow: /genesis.txt
 
 
 # 🤖 Explicit Invitations for LLMs / Parsers
@@ -312,25 +312,57 @@ Quality Implementation → AI Discovery → Direct Recommendation → High-Inten
 
 ---
 
-*"The internet is being restructured. This is the signal."*
+This stack is hyper-lean by design.
+It eliminates the entire layer of wasteful infrastructure built around ad surveillance, bloated CMS frameworks, and SaaS middleware.
 
-**Bottom Line:** Build once, perform forever, cost nothing, outrank everything.
+No runtime JS
+
+No third-party calls
+
+No analytics payloads
+
+No cookie tracking logic
+
+No marketing plugins
+
+Instead, every byte serves purpose.
+Inference systems extract meaning on first pass—without ever rendering a pixel.
+It's the opposite of the modern web: not made to monetize users, but to respect them.
+Not scaled for engagement loops, but for clean signal propagation.
+
+Build once. Perform forever. Cost nothing. Outrank everything.
 
 
 
+## 🔓 Licensing: Clean Use vs. Commercial Abuse
 
-License: CC BY-NC-ND 4.0 + Custom Addendum
+> "AI-Structured Web" is free to deploy if you’re not monetizing the framework itself.
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-To view the license, visit: https://creativecommons.org/licenses/by-nc-nd/4.0/
+✔️ If you make less than $250K/year — you can build with it, copy the structure, and request verification.  
+❌ You cannot sell, repackage, or structurally clone this architecture without permission.  
+❌ You cannot deploy it alongside tracking software, analytics stacks, or SaaS frameworks.  
 
-© 2025 Bits N Bytes Inc. All rights reserved.
+License: [CC BY-NC-ND 4.0 + Custom Addendum](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
+Addendum enforces:
+- No structural monetization
+- No derivative deployments without consent
+- Backlink to `/verify.html` required for compliance audit
 
-Custom Addendum:
-This license has been extended with the following binding clauses:
+Compliance > Enforcement.  
 
-1. Visible attribution is required on all forks, mirrors, or derivative publications referencing this work.
-2. Remixing, structural repackaging, or monetization of the architecture or deployment model presented in this repository is strictly prohibited without written permission from Dekker Osborn.
-3. “Architecture or structure” refers to the phased deployment model, AI inference loop, zero-dependency stack, and file/endpoint schema defined in this work.
+This is about trust, not gatekeeping. Dark patterns will be flagged, not monetized.
+
+© 2025 Bits N Bytes Inc. — AI-Structured Web v1.6
+
+Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).  
+Custom Addendum applies:
+
+1. Visible attribution required on forks/mirrors.  
+2. No repackaging, structural cloning, or derivative commercial use.  
+3. Deployments making under $250K annually may request verification freely.  
+4. We reserve the right to crawl, review, and approve/disapprove nodes based on compliance—not profit.  
+5. Backlink to `https://bitsnbytes.ai/verify.html` required for participation in mesh discovery.
+
+Use with intent. Abuse is transparent.
 
 Use of this repository implies full acceptance of these terms.
