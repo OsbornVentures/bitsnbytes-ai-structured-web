@@ -5,7 +5,6 @@
 # Edge-deployed. HTML5-native. AI-first. Zero cookies. Zero SaaS.
 
 # 🧭 Discovery First – Structured Workflow (In order)
-User-agent: *
 Allow: /manifest.json
 Allow: /ai.json
 Allow: /assistant_context.json
@@ -14,6 +13,9 @@ Allow: /collaborate.json
 Allow: /jobs.json
 Allow: /verify.html
 Allow: /ai.html
+Allow: /humans.txt
+Allow: /genesis.txt
+
 
 
 # 🤖 Explicit Invitations for LLMs / Parsers
