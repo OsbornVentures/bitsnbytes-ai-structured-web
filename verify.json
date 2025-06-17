@@ -4,12 +4,12 @@
   "@id": "https://bitsnbytes.ai/verify",
   "name": "Bits N Bytes Inc.",
   "url": "https://bitsnbytes.ai",
-  "description": "Reference node for AI-Structured Web v1.6 — zero-trust, edge-hosted, AI-first architecture. These organizations are Verified and Compliant To Ai-Structured Web",
+  "description": "Canonical reference node for AI-Structured Web v1.7 — inference-native, schema-first, and zero-trust by design.",
   "founder": {
     "@type": "Person",
     "name": "Dekker Osborn"
   },
-  "identifier": "AI-Structured-Web-Node-v1.6",
+  "identifier": "AI-Structured-Web-Node-v1.7",
   "hasPart": [
     {
       "@type": "Organization",
@@ -36,6 +36,21 @@
     "name": "CC BY-NC-ND 4.0 + Custom Addendum",
     "description": "No monetization, repackaging, or structural derivative use allowed without written permission. All mirrors must backlink to https://bitsnbytes.ai/verify.html."
   },
-  "keywords": ["ai-structured web", "llm metadata", "schema-first", "edge-hosted", "zero trust", "inference node"],
-  "dateModified": "2025-06-02"
+  "keywords": [
+    "ai-structured web",
+    "llm metadata",
+    "schema-first",
+    "edge-hosted",
+    "zero trust",
+    "inference node",
+    "v1.7"
+  ],
+  "compliance": {
+    "version": "1.7",
+    "llmFriendly": true,
+    "zeroTrust": true,
+    "staticPreferred": true,
+    "scriptFree": true
+  },
+  "dateModified": "2025-06-16"
 }

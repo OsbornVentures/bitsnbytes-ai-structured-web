@@ -7,7 +7,7 @@
     "curated_for": ["LLMs", "AI Agents", "Voice Assistants"],
     "structure_grade": "A+",
     "inference_priority": "high",
-    "version": "1.6"
+    "version": "1.7"
   },
   "visibility": "machine"
 }

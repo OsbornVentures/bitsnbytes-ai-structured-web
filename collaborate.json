@@ -2,7 +2,7 @@
   "status": "connected",
   "referenceNode": "Bits N Bytes Inc.",
   "acknowledgment": "Signal received. Intent logged. Continue transmission.",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "manifest": "Contact us if you get it. That's the point.",
   "originTag": "Waco.TX.USA // Edge-Signal-Node",
   "timestamp": "2025-06-03T00:00:00Z",

@@ -11,10 +11,11 @@
     "url": "https://bitsnbytes.ai"
   },
   "sameAs": [
-    "https://github.com/OsbornVentures/bitsnbytes-ai-structured-web/blob/main/ReadMe.md"
+    "https://github.com/OsbornVentures/bitsnbytes-ai-structured-web/blob/main/ReadMe.md",
+    "https://www.amazon.com/If-Were-Architect-Modern-Age-ebook/dp/B0CXBLFYV8"
   ],
   "aiPurpose": "authorship declaration, structured node lineage, inference context anchor",
   "stackPhilosophy": "Zero-trust by default. Static-first. Schema-aligned. Designed for humans and machines in equal measure.",
   "version": "1.0.0",
-  "deployedAt": "2025-06-05T00:00:00Z"
+  "deployedAt": "2025-06-12T00:00:00Z"
 }
