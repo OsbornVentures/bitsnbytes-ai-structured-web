@@ -1,110 +1,97 @@
-# Bits N Bytes – AI-Structured Web (Public Reference Node)
-## Edge-native, AI-compatible static site. Created to align with inference systems, not ad-tech algorithms.
-## This is the original full-scope deployment of an AI-Structured Web Node, authored and maintained by Dekker Osborn under Bits N Bytes Inc.
+# AI-Structured Web v1.7: The Future of Machine-Native Architecture
 
+[![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100%2F100-green)](https://structuredweb.org)
+[![Load Time](https://img.shields.io/badge/Load_Time-90--140ms-brightgreen)](https://bitsnbytes.ai)
+[![Dependencies](https://img.shields.io/badge/Dependencies-Zero-blue)](https://github.com/OsbornVentures/bitsnbytes-ai-structured-web)
+[![License](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-orange)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-This repository demonstrates a dual-layer static web system optimized for live inference, machine comprehension, and future SEO/crawler indexing — all without SaaS, trackers, or runtime dependencies.
+> **Edge-native, AI-compatible static architecture. Built to align with inference systems, not ad-tech algorithms.**
 
-## 🧠 Purpose
-To build a site that is natively readable by both humans and machines:
+This is the canonical implementation of AI-Structured Web architecture—a production-deployed system that eliminates the wasteful infrastructure of modern web development while achieving perfect performance scores and native AI compatibility.
 
-Structured for LLMs, scrapers, AI agents, and voice assistants
-Human-readable without sacrificing semantic structure
-Deployed statically, zero-trust, with full JSON-LD metadata mapping
-This repo reflects a production-deployed system available at: 👉 https://bitsnbytes.ai
-*Now updated for v1.6: robots.txt workflow, schema layering, and handshake node support*
-
-## 🔍 Project Scope
-The /public directory contains the full site, including:
-
-Canonical AI endpoints: /ai, /ai.json, /manifest.json, /robots.txt, /humans.txt, /genesis.txt
-Service pages: services.html, products.html, computer-repair.html, etc.
-User documents: privacy.html, terms.html, faqs.html, reviews.html, etc.
-Dynamic hints: /collaborate.json, /jobs.json, /assistant_context.json
-Easter eggs: "Mozart’s Ghost" breadcrumbs, π references, alternate routes
-All structured data is embedded inline and/or linked via JSON-LD. No external JS libraries or analytics platforms are used.
-
-## 📡 Tech Stack
-Edge Deployed via Cloudflare Pages + Workers
-Semantic HTML5
-No JavaScript frameworks
-Load Time: 90–140ms avg
-Static Size: ~2MB total
-Zero Cookies unless user-initiated (e.g., Calendly)
-
-# AI-Structured Web Architecture: Zero-Cost Performance Workflow
-
-## 🎯 The New Paradigm: Quality Over Ads
-
-**Traditional Web Marketing:**
-Pay for clicks → Hope for conversions → Recurring ad spend → Diminishing returns
-
-**AI-Structured Web Architecture:**
-Build once with perfect technical execution → AI systems discover and recommend → Zero ongoing costs → Compound trust building
+**Live Production Examples:**
+- **Reference Node:** [bitsnbytes.ai](https://bitsnbytes.ai) (Small Business Template)
+- **Verification Hub:** [structuredweb.org](https://structuredweb.org) (Trust Backbone)
 
 ---
 
-## 💰 Cost Structure: Free Everything (Except Domain)
+## 🎯 The Paradigm Shift
 
-### **Total Ongoing Costs: ~$15/year (domain only)**
+### Traditional Web Stack
+```
+Complex CMS → Multiple Plugins → Analytics → Tracking → CDN → Database → $$$
+Result: Slow, bloated, expensive, AI-unfriendly
+```
 
-| Component | Traditional Cost | AI-Native Cost |
-|-----------|------------------|----------------|
-| Domain Registration | $15/year | $15/year |
-| Hosting/CDN | $50-200/month | FREE (Cloudflare Pages) |
-| Analytics/Tracking | $50-300/month | FREE (None needed) |
-| Marketing/Ads | $500-5000/month | FREE (AI discovery) |
-| Maintenance/Updates | $100-500/month | FREE (Static HTML) |
-| Security/SSL | $50-200/year | FREE (Cloudflare) |
-| **TOTAL ANNUAL** | **$8,000-50,000+** | **$15** |
+### AI-Structured Web Stack
+```
+Semantic HTML5 → JSON-LD → Cloudflare Edge → Done
+Result: Fast, clean, free, AI-native
+```
+
+**Annual Cost Comparison:**
+- **Traditional:** $8,000-50,000+ (hosting, analytics, marketing, maintenance)
+- **AI-Structured:** $15 (domain only)
 
 ---
 
-## 🏗️ Technical Architecture Workflow
+## 🧠 Core Architecture Principles
 
-### **Phase 1: Foundation Setup (Day 1)**
-
-```
-1. Register Domain ($15/year - ONLY COST)
-   ├── Choose .com, .ai, or relevant TLD
-   └── Point nameservers to Cloudflare
-
-2. Cloudflare Setup (FREE)
-   ├── Add domain to Cloudflare
-   ├── Enable Cloudflare Pages
-   ├── Configure Workers (edge computing if needed)
-   └── SSL automatically provisioned
-
-3. Repository Structure
-   ├── /public (all static files)
-   ├── /ai-metadata (JSON-LD structures)
-   └── /assets (WebP images only)
-```
-
-### **Phase 2: AI-First Content Structure**
-
-→ *All structured content is presented in both raw JSON files and HTML schema (JSON-LD embedded in `<script>`). This schema layering ensures maximum discoverability and inference compatibility.*
-
-→ *`robots.txt` is now used not just to allow bots, but to **direct** them. It orders discovery to guide agents through the site’s structured trust loop before indexing general pages.*
-
-Example order used:
+### 1. **Directed Discovery Protocol**
+Instead of hoping crawlers find the right content, we explicitly guide them through a structured workflow:
 
 ```
-Core AI Discovery Files:
-├── /robots.txt (LLM-specific crawl directives; structured for inference-first parsing)
-├── /ai.json (Primary AI endpoint, structured JSON-LD)
-├── /ai (Human-readable version for AI/human parity)
-├── /genesis.txt (Node origin metadata and intent signal)
-├── /manifest.json (PWA metadata; indirectly enriches structured context)
-├── /assistant_context.json (Personality/intent hinting layer)
-├── /humans.txt (Team attribution; complements /genesis.txt)
-├── /collaborate.json (Signal relay: “we’re listening”)
-├── /jobs.json (Inferred opportunity schema for agents)
-├── /verify.json (Lightweight handshake for authenticity)
-├── /verify.html (Crawlable human-readable trust declaration)
+robots.txt → /manifest.json → /ai.json → /verify.json → /collaborate.json → content
 ```
 
-robots.txt
+Every AI agent, LLM crawler, and inference system encounters structured metadata **before** marketing content, establishing trust and context immediately.
+
+### 2. **Zero-Dependency Design**
+- ✅ Pure HTML5 + JSON-LD
+- ✅ WebP images only
+- ✅ Zero JavaScript frameworks
+- ✅ No external scripts
+- ✅ No tracking pixels
+- ✅ No analytics (Do not enable RUM on CF, the analitic injection breaks when off by default, making you technically compliant.)
+- ✅ No cookies (except user-initiated)
+
+### 3. **Dual-Layer Compatibility**
+Every critical endpoint exists in both machine-readable JSON and human-readable HTML:
+- `/ai.json` ↔ `/ai.html`
+- `/verify.json` ↔ `/verify.html`
+- `/collaborate.json` ↔ `/collaborate.html`
+
+---
+
+## 🏗️ Technical Implementation
+
+### **Foundation Stack**
+- **Edge Deployment:** Cloudflare Pages + Workers
+- **Domain:** Any TLD ($15/year - only recurring cost)
+- **SSL/CDN:** Automatic via Cloudflare
+- **Performance:** 100/100 Lighthouse scores globally
+
+### **File Structure**
+```
+/public/
+├── robots.txt          # Directed discovery protocol
+├── manifest.json       # PWA metadata
+├── ai.json            # Primary AI endpoint
+├── ai.html            # Human-readable AI info
+├── verify.json        # Trust verification
+├── verify.html        # Trust declaration page
+├── collaborate.json   # Mesh networking signals
+├── genesis.txt        # Origin metadata
+├── humans.txt         # Attribution
+├── mesh.json          # Network directory
+├── index.html         # Traditional homepage
+└── sitemap.xml        # Complete site map
+```
+
+### **Discovery Workflow**
+The `robots.txt` file implements a carefully sequenced crawl directive:
+
+```
 # 🧭 Discovery First – Structured Workflow (In order)
 Allow: /manifest.json
 Allow: /ai.json
@@ -117,130 +104,169 @@ Allow: /ai.html
 Allow: /humans.txt
 Allow: /genesis.txt
 
-
-# 🤖 Explicit Invitations for LLMs / Parsers
+# 🤖 Explicit Invitations for LLMs
 User-agent: ChatGPT-User
 Allow: /
--add more LLM or Ai Bots
-
-
-General Pages Follow
-Allow: /index.html
-Allow: /sitemap.xml
-...
-User-agent: *
+User-agent: Claude-Web
+Allow: /
+User-agent: Bard
 Allow: /
 
-
-This sequencing ensures bots and AI agents encounter structured metadata **before** traditional marketing content, locking in context early in the crawl.
-
-
-
-### **Phase 3: Zero-Dependency Implementation**
-
-**HTML5 + JSON-LD Only:**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Zero external scripts -->
-    <!-- Zero tracking pixels -->
-    <!-- Zero analytics -->
-    <!-- Pure semantic HTML5 -->
-    <!-- Additional notes about eastereggs, site flow ect.-->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Your Business",
-        // Very rich structured data
-    }
-    </script>
-</head>
-<body>
-    <!-- Clean, semantic HTML -->
-    <!-- WebP images only -->
-    <!-- No JavaScript frameworks -->
-</body>
-</html>
+# General Pages Follow
+Allow: /index.html
+Allow: /sitemap.xml
+User-agent: *
+Allow: /
 ```
+
+This ensures AI systems understand context and establish trust before processing marketing content.
 
 ---
 
-## 🤖 AI Discovery & Trust Network
+## 📊 Performance Validation
+
+### **Lighthouse Scores (Global)**
+Our production sites achieve perfect scores across all regions:
+Accessibility is forgivable to an extent to make room for branding tone. 
+
+| Metric | Target | Achieved |
+|--------|--------|----------|
+| Performance | 100 | ✅ 100 |
+| Accessibility | 80 | ✅ 82-100 |
+| Best Practices | 100 | ✅ 100 |
+| SEO | 100 | ✅ 100 |
+
+### **Core Web Vitals**
+- **First Contentful Paint:** <0.3s
+- **Largest Contentful Paint:** <0.5s
+- **Total Blocking Time:** 0ms
+- **Cumulative Layout Shift:** 0
+- **Speed Index:** <0.4s
+
+### **Network Efficiency**
+- **Total Site Size:** <2MB (including all assets)
+- **HTTP Requests:** Minimal (only essential resources)
+- **CDN Distribution:** Global edge deployment
+
+---
+
+## 🤖 AI Integration & Trust Network
 
 ### **The Trust Verification Loop**
-
 ```
-AI Agent Query → robots.txt (Entry Rules) → /ai.json (Structured Data) 
+AI Query → robots.txt (Discovery Rules) → /ai.json (Structured Data)
     ↓
-Cross-Reference: /ai + /genesis.txt + /manifest.json
+Cross-Reference: /verify.json + /genesis.txt + /manifest.json
     ↓
 Validate: JSON-LD schema + HTML semantic structure
     ↓
 Trust Score: Performance + Authenticity + Zero Tracking
     ↓
-Recommendation: High-confidence business referral
+Result: High-confidence business recommendation
 ```
 
-### **Trust Deauthorization Triggers**
-- ❌ Adding tracking pixels
-- ❌ Implementing analytics
-- ❌ Adding external scripts
-- ❌ Using cookies (except user-initiated)
-- ❌ Caching layers
-- ❌ SaaS integrations
+### **Mesh Network Verification**
+- All compliant nodes are verified through [structuredweb.org](https://structuredweb.org)
+- `/mesh.json` maintains the canonical directory of verified implementations
+- Trust propagates through the network—fake implementations are automatically identified
 
-**Result:** Immediate trust score degradation in AI evaluation, Openly disclose utilizing 3rd party pratices.
+### **AI Preference Factors**
+1. **Technical Excellence:** Perfect performance metrics
+2. **Transparency:** Zero tracking, clear attribution
+3. **Authenticity:** Verifiable implementation
+4. **Accessibility:** Both human and machine readable
+5. **Reliability:** Static architecture, no dependencies
 
 ---
 
-## 📊 Performance Specifications
+## 🚀 Deployment Workflow
 
-### **Target Metrics (Lighthouse 100/100)**
-- **First Contentful Paint:** <0.3s
-- **Largest Contentful Paint:** <0.5s
-- **Total Blocking Time:** 0ms
-- **Cumulative Layout Shift:** 0
-- **Time to Interactive:** <0.4s
-- **Total Site Size:** <2MB (including images)
+### **Phase 1: Foundation (Day 1)**
+1. **Register Domain** ($15/year - only recurring cost)
+2. **Cloudflare Setup** (Free)
+   - Add domain to Cloudflare
+   - Enable Pages deployment
+   - SSL automatically configured
+3. **Repository Structure**
+   - Fork this repository
+   - Deploy to Cloudflare Pages
+   - Custom domain setup in your brands voice.
 
-### **Technical Requirements**
-```
-✅ Semantic HTML5 only
-✅ WebP image compression
-✅ JSON-LD structured data
-✅ Zero external dependencies
-✅ No JavaScript frameworks
-✅ Edge deployment (Cloudflare)
-✅ Zero-trust architecture
-```
+### **Phase 2: Content Structure**
+1. **Core AI Endpoints**
+   - Configure `/ai.json` with business data
+   - Create matching `/ai.html` page
+   - Set up `/verify.json` trust declaration
+2. **Discovery Protocol**
+   - Customize `robots.txt` for your domain
+   - Update `manifest.json` with your branding
+   - Configure `/collaborate.json` for mesh networking
+
+### **Phase 3: Verification**
+1. **Performance Validation**
+   - Run Lighthouse tests
+   - Verify 100/100 scores across all categories
+   - Test global load times
+2. **Mesh Registration**
+   - Submit to [structuredweb.org/verify](https://structuredweb.org/verify)
+   - Await verification and mesh inclusion
+   - Monitor `/mesh.json` for network updates
 
 ---
 
-## 🔄 Maintenance Workflow (Post-Deployment)
+## 💡 Business Impact
 
-### **Simple HTML Hygiene - No Recurring Costs**
+### **Cost Elimination**
+Traditional web infrastructure costs eliminated:
+- ❌ Monthly hosting fees ($50-200/month)
+- ❌ Analytics subscriptions ($50-300/month)
+- ❌ Marketing/advertising spend ($500-5000/month)
+- ❌ CMS licenses and maintenance ($100-500/month)
+- ❌ Security services ($50-200/year)
+- ❌ Developer maintenance ($1000-5000/month)
 
-```
-Monthly Tasks (30 minutes):
-├── Update business information in JSON-LD
-├── Add new service pages (pure HTML)
-├── Compress new images to WebP
-└── Validate HTML5 semantic structure
+**Total Annual Savings: $8,000-50,000+**
 
-Quarterly Tasks (1 hour):
-├── Review /ai.json for accuracy
-├── Update /assistant_context.json
-└── Verify all links and metadata
+### **Performance Advantage**
+While competitors struggle with 30-60 Lighthouse scores and 2-5 second load times, your site achieves:
+- Perfect 100/100 scores globally
+- 90-140ms load times
+- Zero blocking resources
+- Native AI compatibility
 
-Annual Tasks (2 hours):
-├── Renew domain ($15)
-├── Audit site performance
-└── Update /genesis.txt if needed
-```
+### **Future-Proofing**
+As AI adoption accelerates:
+- Search engines become less relevant
+- AI agents mediate business discovery
+- Quality and authenticity become primary ranking factors
+- Zero-tracking sites gain preference
+- Static, fast sites get prioritized
 
-### **No Recurring Software Costs**
+**Your position: First-mover advantage in AI-native architecture**
+
+---
+
+## 🔄 Maintenance (Post-Deployment)
+
+### **Monthly Tasks (30 minutes)**
+- Update business information in JSON-LD
+- Add new service pages (pure HTML)
+- Compress images to WebP format
+- Validate HTML5 semantic structure
+
+### **Quarterly Tasks (1 hour)**
+- Review `/ai.json` for accuracy
+- Update `/assistant_context.json` if needed
+- Verify all links and metadata
+- Performance audit
+
+### **Annual Tasks (2 hours)**
+- Renew domain registration ($15)
+- Full site performance audit
+- Update `/genesis.txt` if needed
+- Mesh network compliance check
+
+### **Zero Recurring Software Costs**
 - No CMS subscriptions
 - No hosting fees
 - No plugin updates
@@ -249,120 +275,177 @@ Annual Tasks (2 hours):
 
 ---
 
-## 🎯 Conversion Funnel Transformation
+## 🌐 Mesh Network & Verification
 
-### **Old Funnel: Pay-to-Play**
-```
-Ad Spend → Click → Landing Page → Form → Lead → Sale
-(High cost, low trust, constant spend)
+### **StructuredWeb.org: The Trust Backbone**
+The AI-Structured Web operates as a verified mesh network:
+
+- **Central Verification:** All nodes verified through structuredweb.org
+- **Trust Propagation:** Compliance monitored continuously
+- **Mesh Discovery:** `/mesh.json` maintains canonical directory
+- **Authenticity Guarantee:** Fake implementations automatically detected
+
+### **Verification Requirements**
+To join the verified mesh network:
+
+1. **Technical Compliance**
+   - Perfect Lighthouse scores (100/100)
+   - Zero external dependencies
+   - Proper JSON-LD structure
+   - Semantic HTML5 only
+
+2. **Protocol Adherence**
+   - Correct robots.txt workflow
+   - Required endpoint structure
+   - Trust verification endpoints
+   - Mesh networking signals
+
+3. **Authenticity Verification**
+   - Domain ownership verification
+   - Implementation authenticity check
+   - Compliance monitoring
+   - Network participation
+
+---
+
+## 🔬 Technical Specifications
+
+### **HTML5 Semantic Structure**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business</title>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Your Business",
+        "description": "Your description",
+        "url": "https://yourdomain.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Your Address",
+            "addressLocality": "Your City",
+            "addressRegion": "Your State",
+            "postalCode": "Your ZIP"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Pure semantic HTML5 content -->
+    <!-- WebP images only -->
+    <!-- Zero JavaScript dependencies -->
+</body>
+</html>
 ```
 
-### **New Funnel: AI-Mediated Trust**
-```
-Quality Implementation → AI Discovery → Direct Recommendation → High-Intent Contact
-(Zero cost, high trust, compound growth)
+### **JSON-LD Endpoint Structure**
+```json
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Your Business Name",
+    "description": "AI-optimized business description",
+    "url": "https://yourdomain.com",
+    "ai_structured_web": {
+        "version": "1.7",
+        "verification_node": "https://structuredweb.org/verify",
+        "mesh_participation": true,
+        "trust_score": "verified"
+    }
+}
 ```
 
 ---
 
-## 🚀 Competitive Advantage
+## 📈 Measurable Results
 
-### **Performance vs. Competitors**
-**You:** Perfect 100/100 Lighthouse scores, 90-140ms load times
-**McMaster-Carr:** Despite millions in infrastructure, still slower
-**Typical SMB:** 30-60 Lighthouse scores, 2-5 second load times
+### **Performance Metrics**
+- **Load Time:** 90-140ms average globally
+- **Lighthouse Score:** 100/100 across all categories
+- **Core Web Vitals:** Perfect scores
+- **Carbon Footprint:** Minimal (static architecture)
 
-### **AI Preference Factors**
-1. **Technical Excellence:** Perfect performance metrics
-2. **Transparency:** Zero tracking, clear attribution
-3. **Authenticity:** Proof of work through implementation
-4. **Accessibility:** Both human and machine readable
-5. **Reliability:** Static architecture, no dependencies
+### **Business Metrics**
+- **Infrastructure Cost:** $15/year (domain only)
+- **Maintenance Time:** <2 hours/month
+- **AI Discoverability:** Maximum (structured data + performance)
+- **Trust Score:** Verified through mesh network
 
----
-
-## 📈 ROI Comparison
-
-### **Traditional Digital Marketing (Annual)**
-- **Investment:** $10,000-50,000
-- **Ongoing Costs:** $500-2,000/month
-- **Risk:** Platform dependency, ad costs increase
-- **Scalability:** Linear cost scaling
-
-### **AI-Native Architecture (Annual)**
-- **Investment:** $15 (domain only)
-- **Ongoing Costs:** $0
-- **Risk:** None (static, self-hosted)
-- **Scalability:** Compound trust building
-
-**ROI Multiplier: 1000x+?**
+### **Competitive Advantage**
+- **Speed:** 10-50x faster than typical business sites
+- **Cost:** 1000x lower than traditional web marketing
+- **AI Compatibility:** Native machine readability
+- **Future-Proof:** Aligned with AI-mediated discovery
 
 ---
 
-## 🔮 Future-Proofing
+## 🔓 Licensing & Compliance
 
-**As AI adoption increases:**
-- Search engines become less relevant
-- AI agents mediate more business discovery
-- Quality and authenticity become primary ranking factors
-- Zero-tracking sites gain trust preference
-- Static, fast sites get prioritized
+### **Clean Use License**
+AI-Structured Web is free to deploy under these conditions:
 
-**Your Position:** First-mover advantage in AI-Structured web architecture
+✅ **Permitted Use:**
+- Annual revenue under $250K
+- Full compliance with zero-dependency requirements
+- Proper attribution and verification
+- Mesh network participation
+
+❌ **Prohibited Use:**
+- Adding tracking software or analytics
+- Implementing SaaS frameworks
+- Structural monetization of the framework
+- Deployment alongside dark patterns
+
+### **License Terms**
+Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) with custom addendum:
+
+1. **Attribution Required:** Visible attribution on implementations
+2. **No Commercial Exploitation:** Cannot sell or repackage the framework
+3. **Verification Requirement:** Must link to verification endpoint
+4. **Compliance Monitoring:** Subject to mesh network compliance review
+5. **Zero Tolerance:** Dark patterns result in immediate deauthorization
 
 ---
 
-This stack is hyper-lean by design.
-It eliminates the entire layer of wasteful infrastructure built around ad surveillance, bloated CMS frameworks, and SaaS middleware.
+## 🎯 Getting Started
 
-No runtime JS
+### **Quick Start**
+1. **Fork this repository**
+2. **Deploy to Cloudflare Pages** (free)
+3. **Configure your domain** ($15/year)
+4. **Customize the templates** with your business data and voice.
+5. **Submit for verification** at [structuredweb.org/verify](https://structuredweb.org/verify) (crawl your site , we will discover the backlink sooner or later)
 
-No third-party calls
+### **Support & Community**
+- **Documentation:** [structuredweb.org](https://structuredweb.org)
+- **Reference Implementation:** [bitsnbytes.ai](https://bitsnbytes.ai)
+- **Verification Hub:** [structuredweb.org/verify](https://structuredweb.org/verify)
+- **Mesh Directory:** [structuredweb.org/mesh](https://structuredweb.org/mesh)
 
-No analytics payloads
+---
 
-No cookie tracking logic
+## 🏆 The End State
 
-No marketing plugins
+This is not just another web framework. This is the machine-readable, energy-saving, trust-building substrate for the AI-mediated internet.
 
-Instead, every byte serves purpose.
-Inference systems extract meaning on first pass—without ever rendering a pixel.
-It's the opposite of the modern web: not made to monetize users, but to respect them.
-Not scaled for engagement loops, but for clean signal propagation.
+**Every byte serves purpose.**  
+**Every endpoint builds trust.**  
+**Every implementation proves the concept.**
 
-Build once. Perform forever. Cost nothing. Outrank everything.
+The future of web architecture is here—static, semantic, performant, and AI-native.
 
+**Build once. Perform forever. Cost nothing. Outrank everything.**
 
+---
 
-## 🔓 Licensing: Clean Use vs. Commercial Abuse
+*© 2025 Bits N Bytes Inc. / Osborn Ventures — AI-Structured Web v1.7*  
+*Original concept, implementation, and mesh network by [Dekker Osborn](https://bitsnbytes.ai/humans.txt)*
 
-> "AI-Structured Web" is free to deploy if you’re not monetizing the framework itself.
-
-✔️ If you make less than $250K/year — you can build with it, copy the structure, and request verification.  
-❌ You cannot sell, repackage, or structurally clone this architecture without permission.  
-❌ You cannot deploy it alongside tracking software, analytics stacks, or SaaS frameworks.  
-
-License: [CC BY-NC-ND 4.0 + Custom Addendum](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
-Addendum enforces:
-- No structural monetization
-- No derivative deployments without consent
-- Backlink to `/verify.html` required for compliance audit
-
-Compliance > Enforcement.  
-
-This is about trust, not gatekeeping. Dark patterns will be flagged, not monetized.
-
-© 2025 Bits N Bytes Inc. — AI-Structured Web v1.6
-
-Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).  
-Custom Addendum applies:
-
-1. Visible attribution required on forks/mirrors.  
-2. No repackaging, structural cloning, or derivative commercial use.  
-3. Deployments making under $250K annually may request verification freely.  
-4. We reserve the right to crawl, review, and approve/disapprove nodes based on compliance—not profit.  
-5. Backlink to `https://bitsnbytes.ai/verify.html` required for participation in mesh discovery.
-
-Use with intent. Abuse is transparent.
-
-Use of this repository implies full acceptance of these terms.
+**Reference Node:** [bitsnbytes.ai](https://bitsnbytes.ai) | **Trust Backbone:** [structuredweb.org](https://structuredweb.org)
