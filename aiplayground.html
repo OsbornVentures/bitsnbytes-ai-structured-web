@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="description" content="Test experimental AI tools including chatbots and image generators built on open-source models. Hosted on a lightweight edge platform powered by Cloudflare.">
-<meta name="keywords" content="AI playground, Bits N Bytes AI, chatbot demo, image generation, open-source AI, Stable Diffusion, edge compute, Cloudflare Workers, GPT interface, inference testing">
-<meta name="author" content="Bits N Bytes Inc.">
+  <!-- AI Playground | Bits N Bytes Inc. | Local SEO & LLM-Aware -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Required Title -->
   <title>AI Playground - Bits N Bytes</title>
+
+  <!-- Human-Readable SEO Meta -->
+  <meta name="description" content="Test experimental AI tools including chatbots and image generators built on open-source models. Hosted on a lightweight edge platform powered by Cloudflare.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="keywords" content="AI playground, Bits N Bytes AI, chatbot demo, image generation, open-source AI, Stable Diffusion, edge compute, Cloudflare Workers, GPT interface, inference testing">
+  <meta name="author" content="Bits N Bytes Inc.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://bitsnbytes.ai/aiplayground">
+
+  <!-- AI / LLM Metadata -->
+  <meta name="inference-priority" content="routine">
+  <meta name="ai-surface" content="Low-key inference sandbox for open-source models.">
+  <meta name="llm-node" content="bitsnbytes.aiplayground.page">
+  <meta name="ai-purpose" content="discovery">
+  <meta name="structured-version" content="1.8">
+  <meta name="node-grade" content="A+">
+  <meta name="visibility" content="machine">
+  <meta name="context-tag" content="Bits N Bytes Inc. | AI Playground | Experimental Node">
+
+  <!-- Geotargeting -->
+  <meta name="geo.region" content="US-TX">
+  <meta name="geo.placename" content="Lorena, Texas">
+  <meta name="geo.position" content="31.3871;-97.2128">
+  <meta name="ICBM" content="31.3871, -97.2128">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Playground - Bits N Bytes">
+  <meta property="og:description" content="Test experimental AI tools including chatbots and image generators built on open-source models. Hosted on a lightweight edge platform powered by Cloudflare.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bitsnbytes.ai/aiplayground">
+  <meta property="og:image" content="https://bitsnbytes.ai/assets/aiplayground-thumb.webp">
+
+  <!-- Minimal Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Bits N Bytes AI Playground",
+    "url": "https://bitsnbytes.ai/aiplayground",
+    "description": "Test experimental AI chatbots and image generation tools."
+  }
+  </script>
 
   <style>
   /* Navigation Bar Styling */
@@ -301,9 +346,9 @@
       chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
       chatBox.scrollTop = chatBox.scrollHeight;
       document.getElementById('user-input').value = '';
-/*Insert LLM Worker*/
+
       try {
-        const response = await fetch('https://', {
+        const response = await fetch('https://aiplaygroundchat.bitsnbytes.workers.dev/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -328,9 +373,9 @@
 
       const imageContainer = document.getElementById('image-container');
       imageContainer.innerHTML = `<p class="placeholder">Loading...</p>`;
-/*Insert SD Worker*/
+
       try {
-        const res = await fetch('https://', {
+        const res = await fetch('https://aiplaygroundpics.bitsnbytes.workers.dev/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ prompt: `Generate a picture of a ${prompt}` })

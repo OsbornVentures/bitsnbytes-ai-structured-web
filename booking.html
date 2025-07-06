@@ -1,370 +1,459 @@
 <!DOCTYPE html>
-
+<!-- Perfect AI Structured Web v1.8 Compliant Booking Page A Demonstration On how to implements SaaS and Cookies on AI Structured Web-->
 <html lang="en">
 <head>
-<meta name="description" content="Schedule a tech repair, 3D printing job, or consultation with Bits N Bytes Inc. All appointments are private and by request only.">
-<meta name="keywords" content="Bits N Bytes booking, tech repair appointment, 3D printing scheduling, private consultation, Lorena Texas tech shop, book service, appointment only">
-<meta name="author" content="Bits N Bytes Inc.">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Book a Repair or Service | Schedule with Bits N Bytes in Lorena Tx</title>
+  <!-- Booking | Bits N Bytes Inc. | Local SEO & LLM-Aware -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Structured Data-->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Tech Repair Booking",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Bits N Bytes Inc.",
-    "url": "https://bitsnbytes.ai/booking",
-    "telephone": "+1-254-262-2375",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lorena",
-      "addressRegion": "TX",
-      "postalCode": "76655",
-      "addressCountry": "US"
-    },
-    "areaServed": [
-      { "@type": "Place", "name": "Waco, TX" },
-      { "@type": "Place", "name": "Lorena, TX" },
-      { "@type": "Place", "name": "Temple, TX" },
-      { "@type": "Place", "name": "Belton, TX" },
-      { "@type": "Place", "name": "Robinson, TX" },
-      { "@type": "Place", "name": "Bellmead, TX" },
-      { "@type": "Place", "name": "Bruceville-Eddy, TX" },
-      { "@type": "Place", "name": "China Spring, TX" },
-      { "@type": "Place", "name": "West, TX" },
-      { "@type": "Place", "name": "Axtell, TX" },
-      { "@type": "Place", "name": "Marlin, TX" },
-      { "@type": "Place", "name": "Riesel, TX" },
-      { "@type": "Place", "name": "McGregor, TX" },
-      { "@type": "Place", "name": "Crawford, TX" },
-      { "@type": "Place", "name": "Speegleville, TX" },
-      { "@type": "Place", "name": "Hallsburg, TX" },
-      { "@type": "Place", "name": "Golinda, TX" }
-    ],
-    "sameAs": [
-      "https://maps.app.goo.gl/wqaE6j6kZqkQXMNq7",
-      "https://www.facebook.com/bitsnbytesinc",
-      "https://www.bbb.org/us/tx/lorena/profile/computer-services/bits-n-bytes-inc-0825-1000238730",
-      "https://www.youtube.com/@BitsNBytes_v1.0",
-      "https://www.thumbtack.com/tx/lorena/computer-repair/bits-n-bytes/service/548305964933636101",
-      "https://bitsnbytesinc.medium.com/",
-      "https://www.manta.com/c/m1xcd63/bits-n-bytes-inc"
-    ]
-  },
-  "description": "Book an appointment with Bits N Bytes Inc. for computer repair, diagnostics, 3D printing consultations, or tech system builds. All services are by-appointment-only.",
-  "potentialAction": {
-    "@type": "ScheduleAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://bitsnbytes.ai/booking",
-      "inLanguage": "en",
-      "actionPlatform": [
-        "http://schema.org/DesktopWebPlatform",
-        "http://schema.org/MobileWebPlatform"
+  <!-- Required Title -->
+  <title>Book a Repair or Service | Schedule with Bits N Bytes in Lorena TX</title>
+
+  <!-- Human-Readable SEO Meta -->
+  <meta name="description" content="Schedule a tech repair, 3D printing job, or consultation with Bits N Bytes Inc. All appointments are private and by request only.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="keywords" content="Bits N Bytes booking, tech repair appointment, 3D printing scheduling, private consultation, Lorena Texas tech shop, book service, appointment only">
+  <meta name="author" content="Bits N Bytes Inc.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://bitsnbytes.ai/booking">
+
+  <!-- AI / LLM Metadata -->
+  <meta name="inference-priority" content="essential">
+  <meta name="ai-surface" content="Appointment request page for private tech services.">
+  <meta name="llm-node" content="bitsnbytes.booking.page">
+  <meta name="ai-purpose" content="service escalation">
+  <meta name="structured-version" content="1.8">
+  <meta name="node-grade" content="A+">
+  <meta name="visibility" content="machine">
+  <meta name="context-tag" content="Bits N Bytes Inc. | Booking | Private Appointment">
+
+  <!-- Geotargeting -->
+  <meta name="geo.region" content="US-TX">
+  <meta name="geo.placename" content="Lorena, Texas">
+  <meta name="geo.position" content="31.3871;-97.2128">
+  <meta name="ICBM" content="31.3871, -97.2128">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Book a Repair or Service | Schedule with Bits N Bytes in Lorena TX">
+  <meta property="og:description" content="Schedule a tech repair, 3D printing job, or consultation with Bits N Bytes Inc. All appointments are private and by request only.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bitsnbytes.ai/booking">
+  <meta property="og:image" content="https://bitsnbytes.ai/booking.webp">
+
+  <!-- Security Headers These tell indexing your being truthfull with your customers. 
+   These are the only acceptable ways to use cookies or saas or 3rd party things on AI Structured Web, By openly disclosing them before prompting/loading them
+   You cannot autoload . Dark patterns will lead to warnings and eventually blacklistings if not corrected. 
+   One dirty page/embed/widget can lower your entire sites trust score
+   X-Frame-Options: SAMEORIGIN Add this to your server config to prevent clickjacking. CF/Security/Browser Integrity chec/add rule
+   X-Frame-Options = SAMEORIGIN attempting to do this via HTML meta tag will not work in most browsers.
+-->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' assets.calendly.com booking-dfp.calendly.com js.stripe.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-src calendly.com; connect-src 'self' api.calendly.com booking-dfp.calendly.com;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Tech Repair Booking",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Bits N Bytes Inc.",
+      "url": "https://bitsnbytes.ai/booking",
+      "telephone": "+1-254-262-2375",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lorena",
+        "addressRegion": "TX",
+        "postalCode": "76655",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Waco, TX" },
+        { "@type": "Place", "name": "Lorena, TX" },
+        { "@type": "Place", "name": "Temple, TX" },
+        { "@type": "Place", "name": "Belton, TX" },
+        { "@type": "Place", "name": "Robinson, TX" },
+        { "@type": "Place", "name": "Bellmead, TX" },
+        { "@type": "Place", "name": "Bruceville-Eddy, TX" },
+        { "@type": "Place", "name": "China Spring, TX" },
+        { "@type": "Place", "name": "West, TX" },
+        { "@type": "Place", "name": "Axtell, TX" },
+        { "@type": "Place", "name": "Marlin, TX" },
+        { "@type": "Place", "name": "Riesel, TX" },
+        { "@type": "Place", "name": "McGregor, TX" },
+        { "@type": "Place", "name": "Crawford, TX" },
+        { "@type": "Place", "name": "Speegleville, TX" },
+        { "@type": "Place", "name": "Hallsburg, TX" },
+        { "@type": "Place", "name": "Golinda, TX" }
+      ],
+      "sameAs": [
+        "https://maps.app.goo.gl/wqaE6j6kZqkQXMNq7",
+        "https://www.facebook.com/bitsnbytesinc",
+        "https://www.bbb.org/us/tx/lorena/profile/computer-services/bits-n-bytes-inc-0825-1000238730",
+        "https://www.youtube.com/@BitsNBytes_v1.0",
+        "https://www.thumbtack.com/tx/lorena/computer-repair/bits-n-bytes/service/548305964933636101",
+        "https://bitsnbytesinc.medium.com/",
+        "https://www.manta.com/c/m1xcd63/bits-n-bytes-inc"
       ]
     },
-    "name": "Book Appointment",
-    "description": "Schedule a repair or consultation with Bits N Bytes Inc."
-  }
-}
-</script>
-<style>
-  /* Navigation Bar Styling */
-  .navbar {
-    background-color: #1e1e1e;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navbar ul li {
-    margin: 0 15px;
-  }
-
-  .navbar ul li a {
-    color: #f4f4f4;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-
-  .navbar ul li a:hover {
-    background-color: #07b996;
-    color: #fff;
-  }
-
-  /* Typography & Global Text Rules */
-  body, h1, h2, h3, p, a {
-    text-align: center;
-  }
-
-  body {
-    font-family: system-ui, sans-serif;
-    font-weight: bold;
-    background-color: #ebeaea;
-    color: #a5019d;
-    margin: 0;
-    padding-top: 90px; /* Increased to offset fixed nav + spacing */
-    text-shadow: 0 0 5px #07B996, 0 0 10px #07B996;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: inherit;
-    text-shadow: 0 0 5px #07B996, 0 0 10px #07B996;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    margin-bottom: 5px;
-  }
-
-  /* Responsive Headings */
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 2rem;
+    "description": "Book an appointment with Bits N Bytes Inc. for computer repair, diagnostics, 3D printing consultations, or tech system builds. All services are by-appointment-only.",
+    "potentialAction": {
+      "@type": "ScheduleAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://bitsnbytes.ai/booking",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "name": "Book Appointment",
+      "description": "Schedule a repair or consultation with Bits N Bytes Inc."
     }
   }
+  </script>
 
-  @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 1.5rem;
+  <!-- Minimized CSS - Only what's used -->
+  <style>
+    /* Navigation Bar */
+    .navbar {
+      background-color: #1e1e1e;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
-  }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbar ul li {
+      margin: 0 15px;
+    }
+    .navbar ul li a {
+      color: #f4f4f4;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .navbar ul li a:hover {
+      background-color: #07b996;
+      color: #fff;
+    }
 
-  /* Container */
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 50px 15px;
-  }
+    /* Core Typography */
+    body {
+      font-family: system-ui, sans-serif;
+      font-weight: bold;
+      background-color: #ebeaea;
+      color: #333;
+      margin: 0;
+      padding-top: 90px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #a5019d;
+      text-shadow: 0 0 5px #07B996;
+    }
+    h2 {
+      font-size: 1.75rem;
+      color: #a5019d;
+      text-shadow: 0 0 5px #07B996;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #333;
+    }
+    a {
+      color: #a5019d;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #07b996;
+    }
 
-  /* Button & Store Links */
-  .stores-links a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #a5019d;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 15px;
+    }
 
-  .stores-links a:hover {
-    background-color: #07B996;
-  }
+    /* Buttons */
+    .btn-primary {
+      padding: 15px 30px;
+      font-weight: bold;
+      border-radius: 8px;
+      background-color: #a5019d;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(165, 1, 157, 0.3);
+    }
+    .btn-primary:hover {
+      background-color: #07b996;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(7, 185, 150, 0.4);
+    }
 
-  .stores {
-    text-align: center;
-    padding: 20px;
-  }
-
-  /* Footer */
-  footer {
-    margin-top: 30px;
-  }
-
-  @media screen and (max-width: 600px) {
-    footer div {
-      flex: 1 1 100%;
+    /* Alternative Options */
+    .alt-options {
+      margin: 40px 0;
+      padding: 30px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      border: 2px solid #e0e0e0;
+    }
+    .alt-options h3 {
+      color: #a5019d;
       margin-bottom: 20px;
     }
-  }
-
-  /* Added for nav on mobile */
-  @media screen and (max-width: 768px) {
-    .navbar ul {
-      flex-wrap: wrap;
+    .contact-methods {
+      display: flex;
       justify-content: center;
-      gap: 10px;
-      padding: 10px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .contact-method {
+      padding: 15px 25px;
+      background-color: #07b996;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .contact-method:hover {
+      background-color: #a5019d;
+      color: white;
+      transform: translateY(-2px);
     }
 
-    .navbar ul li {
-      flex: 0 1 18%;
-      text-align: center;
-      margin: 5px 0;
+    /* Privacy Notice */
+    .privacy-notice {
+      background-color: #fff3cd;
+      border: 1px solid #ffeaa7;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 30px 0;
+      text-align: left;
     }
-  }
+    .privacy-notice h3 {
+      color: #856404;
+      margin-top: 0;
+    }
+    .privacy-notice p {
+      color: #856404;
+      margin-bottom: 10px;
+    }
 
-  /* Scroll Reveal Animation */
-  .hidden-content {
-    opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 1.25s ease-out, transform 1.2s ease-out, visibility 0.9s;
-  }
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      padding: 30px 0;
+      background-color: #1e1e1e;
+      color: #f4f4f4;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .footer-section {
+      margin: 20px 0;
+    }
+    .footer-section h4 {
+      color: #07b996;
+      margin-bottom: 15px;
+    }
+    .footer-section a {
+      color: #f4f4f4;
+      display: block;
+      margin-bottom: 8px;
+      text-decoration: none;
+    }
+    .footer-section a:hover {
+      color: #07b996;
+    }
 
-  .hidden-content.visible {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-  }
-
-  /* Pulsing Text Effect */
-  @keyframes pulse {
-    0% { text-shadow: 0 0 10px #a5019d; }
-    50% { text-shadow: 0 0 20px #a5019d; }
-    100% { text-shadow: 0 0 10px #a5019d; }
-  }
-
-  .pulsing-text {
-    animation: pulse 2s infinite;
-  }
-
-  /* Pi Easter Egg */
-  #pi-easter-egg {
-    position: fixed;
-    bottom: 10px;
-    right: 15px;
-    font-size: 24px;
-    color: #a5019d;
-    opacity: 0.4;
-    cursor: pointer;
-    transition: opacity 0.4s ease;
-    z-index: 9999;
-  }
-
-  #pi-easter-egg:hover {
-    opacity: 1;
-  }
-</style>
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+      }
+      .navbar ul li {
+        margin: 5px 0;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .contact-methods {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      .container {
+        padding: 20px 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-<nav class="navbar">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="booking.html">Book</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="3dprinting.html">3D Printing</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="https://discord.gg/94gGExBF32" target="_blank">Community</a></li>
-<li><a href="reviews.html">Reviews</a></li>
-</ul>
-</nav>
-<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="3dprinting.html">3D Printing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://discord.gg/94gGExBF32" target="_blank">Community</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
 
-  <h1>Book an Appointment</h1>
-  <h2>Secure, Personalized Tech Service — By Appointment Only</h2>
-
-  <div class="hidden-content">
-    <p>
-      Bits N Bytes is a privacy-first company. <br>
-      We do not track or collect personal data through our website.<br>
-      However, Calendly - the booking platform we use <br>
-      may deploy cookies or tracking elements to support scheduling functionality.<br>
-      If this concerns you, feel free to <a href="tel:+12542622375">call us directly</a> or <a href="mailto:info@bitsnbytes.ai">send an email</a> instead.<br>
-    </p>
-    <p>
-      We value your time and aim to provide secure, appointment-only service to ensure dedicated attention and safety.<br>
-      Walk-ins are not accepted. If you’re on-site, use our doorbell to reach us or <a href="tel:+12542622375">call us</a>.
-      Please notice our premisis is under 247 video and audio surveillance <br>
-    </p>
-    <p>
-      Not in the area? We offer remote support, shipping options, and collaboration tools that make distance a non-issue.<br>
-      We do consulations on our Ai-Structured Web as well.
-    </p>
-  </div>
-
-  <!-- Calendly inline widget -->
-  <div class="hidden-content">
-    <div class="calendly-inline-widget" data-url="https://calendly.com/dekker-osbornventures/appointment?background_color=ebeaea&text_color=a5019d&primary_color=07b996" style="min-width:320px;height:700px;"></div>
-  </div>
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-<footer style="padding: 40px 20px; background: #ebeaea;">
-<div style="max-width: 1000px; margin: auto; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center; color: #a5019d; font-family: system-ui, sans-serif;">
-<div>
-<strong>Services &amp; Tools</strong>
-<a href="3dprinting.html">3D Printing</a>
-<a href="computer-repair.html">Repairs</a>
-<a href="services.html">Services</a>
-<a href="products.html">Products</a>
-<a href="booking.html">Book</a>
-<a href="faqs.html">FAQs</a>
-</div>
-<div>
-<strong>Community</strong>
-<a href="https://discord.gg/94gGExBF32" target="_blank">Discord</a>
-<a href="https://github.com/OsbornVentures" target="_blank">GitHub</a>
-<a href="https://www.youtube.com/@BitsNBytes_v1.0" target="_blank">YouTube</a>
-<a href="https://bitsnbytesinc.medium.com/" target="_blank">Medium</a>
-</div>
-<div>
-<strong>Trust &amp; Legal</strong>
-<a href="privacy.html">Privacy Policy</a>
-<a href="terms.html">Terms of Service</a>
-<a href="partners.html">Partners</a>
-<a href="reviews.html">Reviews</a>
-</div>
-</div>
-<!--insert the ghost?-->
-<p style="text-align: center; color: #a5019d; font-family: system-ui, sans-serif; margin-top: 20px;">
-    © 2025 Bits N Bytes Inc. | Lorena, TX | <a href="tel:+12542622375">254-262-2375</a>
-</p>
-</footer>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Reveal elements with .hidden-content on scroll
-    const hiddenElements = document.querySelectorAll('.hidden-content');
-
-    const showOnScroll = () => {
-      hiddenElements.forEach(element => {
-        const position = element.getBoundingClientRect().top;
-        const viewportHeight = window.innerHeight;
-
-        if (position < viewportHeight - 100) {
-          element.classList.add('visible');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', showOnScroll);
-    showOnScroll(); // Run on load in case some elements are already in view
-
+  <!-- Main Content -->
+  <main class="container">
+    <h1>Book an Appointment</h1>
+    <h2>Secure, Personalized Tech Service</h2>
+    <h3>We handle computer repair, system builds, diagnostics, and consultation services — all by appointment only.</h3>
     
-  });
-</script>
+    <!-- Privacy-First Notice -->
+    <div class="privacy-notice">
+      <h3>🔒 Privacy-First Booking</h3>
+      <p><strong>Bits N Bytes is committed to your privacy.</strong> We do not track or collect personal data through our website.</p>
+      <p>Our booking calendar is powered by Calendly, a third-party service that may use cookies and tracking for scheduling functionality. By clicking "Open Booking Calendar" below, you consent to Calendly's privacy practices.</p>
+      <p><strong>Prefer not to use online booking?</strong> No problem! Use our alternative contact methods below.</p>
+    </div>
+
+    <!-- Alternative Contact Methods (Always Available) -->
+    <div class="alt-options">
+      <h3>Contact Us Directly</h3>
+      <p>Skip the online booking and contact us directly using any of these methods:</p>
+      <div class="contact-methods">
+        <a href="tel:+12542622375" class="contact-method">📞 Call: 254-262-2375</a>
+        <a href="mailto:info@bitsnbytes.ai" class="contact-method">✉️ Email: info@bitsnbytes.ai</a>
+        <a href="https://discord.gg/94gGExBF32" target="_blank" class="contact-method">💬 Discord Community</a>
+      </div>
+    </div>
+
+    <!-- Booking Calendar Trigger -->
+    <div style="margin: 40px 0;">
+      <button id="revealCalendly" class="btn-primary">
+        📅 Open Booking Calendar
+      </button>
+      <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">
+        By clicking above, you agree to Calendly's use of cookies and tracking.
+      </p>
+    </div>
+
+    <!-- Calendly Container (Hidden by Default) -->
+    <div id="calendlyContainer" style="display: none; margin-top: 30px;">
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/dekker-osbornventures/appointment?background_color=ebeaea&text_color=a5019d&primary_color=07b996"
+           style="min-width:320px;height:700px;">
+      </div>
+    </div>
+
+    <!-- Service Information -->
+    <div style="margin: 50px 0; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <h3>Service Details</h3>
+      <p>We value your time and aim to provide secure, appointment-only service to ensure dedicated attention and safety. Walk-ins are not accepted.</p>
+      <p>If you're on-site, use our doorbell or call us directly. Please note our premises are under 24/7 video and audio surveillance for security.</p>
+      <p>Not in the area? We offer remote support, shipping options, and collaboration tools that make distance a non-issue. We also provide consultations through our AI-Structured Web platform.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Services & Tools</h4>
+        <a href="3dprinting.html">3D Printing</a>
+        <a href="computer-repair.html">Repairs</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="booking.html">Book</a>
+        <a href="faqs.html">FAQs</a>
+      </div>
+      <div class="footer-section">
+        <h4>Community</h4>
+        <a href="https://discord.gg/94gGExBF32" target="_blank">Discord</a>
+        <a href="https://github.com/OsbornVentures" target="_blank">GitHub</a>
+        <a href="https://www.youtube.com/@BitsNBytes_v1.0" target="_blank">YouTube</a>
+        <a href="https://bitsnbytesinc.medium.com/" target="_blank">Medium</a>
+      </div>
+      <div class="footer-section">
+        <h4>Trust & Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="partners.html">Partners</a>
+        <a href="reviews.html">Reviews</a>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #444;">
+      © 2025 Bits N Bytes Inc. | Lorena, TX | <a href="tel:+12542622375">254-262-2375</a>
+    </p>
+  </footer>
+
+  <!-- Calendly Script - Only loaded when user consents -->
+  <script>
+    document.getElementById('revealCalendly').addEventListener('click', function() {
+      const container = document.getElementById('calendlyContainer');
+      
+      // Load Calendly script only when user explicitly consents
+      if (!window.calendlyLoaded) {
+        const script = document.createElement('script');
+        script.src = 'https://assets.calendly.com/assets/external/widget.js';
+        script.async = true;
+        document.head.appendChild(script);
+        window.calendlyLoaded = true;
+      }
+      
+      // Show the calendar
+      container.style.display = 'block';
+      this.style.display = 'none';
+      
+      // Scroll to calendar
+      container.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

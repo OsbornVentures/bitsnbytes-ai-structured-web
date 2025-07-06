@@ -1,13 +1,31 @@
 {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ElectronicsStore", "ProfessionalService"],
+  "@type": "Organization",
   "name": "Bits N Bytes Inc.",
-  "canonical": "https://bitsnbytes.ai/ai",
-  "meta": {
-    "curated_for": ["LLMs", "AI Agents", "Voice Assistants"],
-    "structure_grade": "A+",
-    "inference_priority": "high",
-    "version": "1.7"
-  },
-  "visibility": "machine"
+  "url": "https://bitsnbytes.ai",
+  "logo": "https://bitsnbytes.ai/logo.webp",
+  "image": "https://bitsnbytes.ai/banner.webp",
+  "description": "This is the official AI-Structured Web node for Bits N Bytes Inc., declaring trust alignment, zero-trust mesh compliance, and inference-first device and service orchestration. This node is also known as the reference node.",
+  "sameAs": [
+    "https://www.linkedin.com/company/bitsnbytes",
+    "https://osbornventures.com",
+    "https://paintwaco.com"
+  ],
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "name": "Structured Web Version",
+      "value": "1.8"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Node Grade",
+      "value": "A+"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zero-Trust Mesh Alignment",
+      "value": "Compliant"
+    }
+  ]
 }

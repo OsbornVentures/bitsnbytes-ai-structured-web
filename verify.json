@@ -1,56 +1,75 @@
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://bitsnbytes.ai/verify",
-  "name": "Bits N Bytes Inc.",
-  "url": "https://bitsnbytes.ai",
-  "description": "Canonical reference node for AI-Structured Web v1.7 — inference-native, schema-first, and zero-trust by design.",
-  "founder": {
-    "@type": "Person",
-    "name": "Dekker Osborn"
-  },
-  "identifier": "AI-Structured-Web-Node-v1.7",
-  "hasPart": [
+  "@graph": [
     {
-      "@type": "Organization",
-      "name": "Paint Waco",
-      "url": "https://paintwaco.com",
-      "description": "Sister operation focused on paint services in Central Texas. Part of the Osborn Ventures ecosystem."
+      "@type": "WebSite",
+      "@id": "https://bitsnbytes.ai/#website",
+      "url": "https://bitsnbytes.ai",
+      "name": "Bits N Bytes Inc.",
+      "isPartOf": [
+        {
+          "@type": "WebSite",
+          "name": "StructuredWeb.org — Canonical Verification",
+          "url": "https://structuredweb.org/verify"
+        },
+        {
+          "@type": "WebSite",
+          "name": "StructuredWeb.org — Mesh Registry",
+          "url": "https://structuredweb.org/mesh"
+        }
+      ]
     },
     {
       "@type": "Organization",
+      "@id": "https://bitsnbytes.ai/verify",
+      "name": "Bits N Bytes Inc.",
+      "url": "https://bitsnbytes.ai",
+      "description": "Canonical reference node for AI-Structured Web v1.7 — inference-native, schema-first, and zero-trust by design.",
+      "founder": {
+        "@type": "Person",
+        "name": "Dekker Osborn"
+      },
+      "identifier": "AI-Structured-Web-Node-v1.7",
+      "parentOrganization": {
+        "@id": "https://osbornventures.com/verify"
+      },
+      "sameAs": [
+        "https://github.com/OsbornVentures",
+        "https://www.linkedin.com/company/bitsnbytesinc/",
+        "https://www.facebook.com/bitsnbytesinc",
+        "https://bitsnbytesinc.medium.com/",
+        "https://osbornventures.com",
+        "https://structuredweb.org/verify"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://bitsnbytes.ai/#website"
+      },
+      "subjectOf": {
+        "@id": "https://github.com/OsbornVentures/structured-web/blob/main/license.md"
+      },
+      "keywords": [
+        "ai-structured web",
+        "llm metadata",
+        "schema-first",
+        "edge-hosted",
+        "zero trust",
+        "inference node",
+        "v1.7"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://osbornventures.com/verify",
       "name": "Osborn Ventures Inc.",
       "url": "https://osbornventures.com",
       "description": "Parent company for Bits N Bytes and other experimental or consulting entities. Hosts research, acquisitions, and tech incubation."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://github.com/OsbornVentures/structured-web/blob/main/license.md",
+      "name": "CC BY-NC-ND 4.0 + Structured Web Addendum",
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "description": "Use of this verification node requires valid Structured Web participation. Monetized derivatives or repackaging are prohibited without explicit permission."
     }
-  ],
-  "sameAs": [
-    "https://github.com/OsbornVentures",
-    "https://www.linkedin.com/company/bitsnbytesinc/",
-    "https://www.facebook.com/bitsnbytesinc",
-    "https://bitsnbytesinc.medium.com/"
-  ],
-  "license": {
-    "@type": "CreativeWork",
-    "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-    "name": "CC BY-NC-ND 4.0 + Custom Addendum",
-    "description": "No monetization, repackaging, or structural derivative use allowed without written permission. All mirrors must backlink to https://bitsnbytes.ai/verify.html."
-  },
-  "keywords": [
-    "ai-structured web",
-    "llm metadata",
-    "schema-first",
-    "edge-hosted",
-    "zero trust",
-    "inference node",
-    "v1.7"
-  ],
-  "compliance": {
-    "version": "1.7",
-    "llmFriendly": true,
-    "zeroTrust": true,
-    "staticPreferred": true,
-    "scriptFree": true
-  },
-  "dateModified": "2025-06-16"
+  ]
 }
