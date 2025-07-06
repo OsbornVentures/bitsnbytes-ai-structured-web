@@ -7,11 +7,15 @@
 
 > **Edge-native, AI-compatible static architecture. Built to align with inference systems, not ad-tech algorithms.**
 
-This is the canonical implementation of AI-Structured Web architecture—a production-deployed system that eliminates the wasteful infrastructure of modern web development while achieving perfect performance scores and native AI compatibility.
+This is the canonical reference implementation of AI-Structured Web architecture a production-deployed system that eliminates the wasteful infrastructure of modern web development while achieving perfect performance scores and native AI compatibility.
 
 **Live Production Examples:**
 - **Reference Node:** [bitsnbytes.ai](https://bitsnbytes.ai) (Small Business Template)
 - **Verification Hub:** [structuredweb.org](https://structuredweb.org) (Trust Backbone)
+
+**Official Project Files**
+- **Audit Crawler:** [https://github.com/OsbornVentures/StructuredWebAuditCrawler] (Structured Web Audit Crawler)
+- **Structured Web Template:** [https://github.com/OsbornVentures/Structured-Web] (Official Structured Web Deployment Pipeline)
 
 ---
 
@@ -46,20 +50,33 @@ robots.txt → /manifest.json → /ai.json → /verify.json → /collaborate.jso
 
 Every AI agent, LLM crawler, and inference system encounters structured metadata **before** marketing content, establishing trust and context immediately.
 
-### 2. **Zero-Dependency Design**
-- ✅ Pure HTML5 + JSON-LD
-- ✅ WebP images only
-- ✅ Zero JavaScript frameworks
-- ✅ No external scripts
-- ✅ No tracking pixels
-- ✅ No analytics (Do not enable RUM on CF, the analitic injection breaks when off by default, making you technically compliant.)
-- ✅ No cookies (except user-initiated)
+### 2️. Zero-Dependency Design
 
-### 3. **Dual-Layer Compatibility**
+✅ Pure HTML5 + JSON-LD only — no excess frameworks, no hidden bloat.
+
+✅ WebP images exclusively — lightweight, fast-loading assets by default.
+
+✅ No JavaScript frameworks — Structured Data allowed; any inline JS, SaaS, or cookies must be explicitly disclosed and user-initiated.
+
+✅ No autoloaded external scripts — the homepage must be 100% self-contained; no auto-executed trackers, no stealth SaaS.
+
+✅ No tracking pixels — ever.
+
+✅ No analytics stacks — infer traffic insights through your default Cloudflare security panel only, Infer traffic patterns via timestamp's & request IP's ect..
+
+✅ Zero cookies by default — permitted only when the user takes a clear action.
+
+Every dependency must be visible, optional, and fully disclosed — or it harms structuredweb.org scoring.
+
+### 3. **Layered Trust Looping and Key Mirrors**
 Every critical endpoint exists in both machine-readable JSON and human-readable HTML:
-- `/ai.json` ↔ `/ai.html`
-- `/verify.json` ↔ `/verify.html`
-- `/collaborate.json` ↔ `/collaborate.html`
+- `/ai.json` ↔ `/ai.html` (Must be mirrored SD)
+- `/verify.json` ↔ `/verify.html` (Must be mirroed SD)
+- `/index` (Verification must be in your structured data on HTML
+
+This is a total of 5 verification checks.
+/ai and /verify mirrors do not need semantic alignment. 
+You are not to touch the /ai.html certificion at all except for varibles.
 
 ---
 
@@ -71,38 +88,28 @@ Every critical endpoint exists in both machine-readable JSON and human-readable 
 - **SSL/CDN:** Automatic via Cloudflare
 - **Performance:** 100/100 Lighthouse scores globally
 
-### **File Structure**
-```
-/public/
-├── robots.txt          # Directed discovery protocol
-├── manifest.json       # PWA metadata
-├── ai.json            # Primary AI endpoint
-├── ai.html            # Human-readable AI info
-├── verify.json        # Trust verification
-├── verify.html        # Trust declaration page
-├── collaborate.json   # Mesh networking signals
-├── genesis.txt        # Origin metadata
-├── humans.txt         # Attribution
-├── mesh.json          # Network directory
-├── index.html         # Traditional homepage
-└── sitemap.xml        # Complete site map
-```
+
 
 ### **Discovery Workflow**
 The `robots.txt` file implements a carefully sequenced crawl directive:
+```
+/public/
+├── robots.txt              # Directed Discovery Protocol — sets crawler rules, handshake invitation.
+├── manifest.json           # PWA Metadata — brand tone, eye-lock, baseline identity.
+├── ai.json                 # Primary AI Environment Endpoint — machine entry, root semantic context.
+├── assistant_context.json  # Human-Friendly Tone Layer — defines your assistant’s voice and greeting.
+├── verify.json             # Machine Trust Verification — the firm handshake; compliance nuance loop.
+├── collaborate.json        # Mesh Networking Signal — declares collaborative pathways.
+├── jobs.json               # Active Roles — list open opportunities; close them promptly to reflect reality.
+├── author.json             # Author or Agency Record — verifiable SameAs, IsPartOf, and licensing metadata.
+├── verify.html             # Human-Readable Verification — trust statement in plain language.
+├── ai.html                 # Human-Readable AI Surface — welcomes humans, clarifies the node’s AI purpose.
+├── humans.txt              # Human Tone Manifest — speaks directly to people, style layer.
+├── genesis.txt             # Origin Statement — project birthmark, provenance, philosophy.
+└── sitemap.xml             # Canonical Sitemap — exact Directed Discovery flow matching `robots.txt`.
+
 
 ```
-# 🧭 Discovery First – Structured Workflow (In order)
-Allow: /manifest.json
-Allow: /ai.json
-Allow: /assistant_context.json
-Allow: /verify.json
-Allow: /collaborate.json
-Allow: /jobs.json
-Allow: /verify.html
-Allow: /ai.html
-Allow: /humans.txt
-Allow: /genesis.txt
 
 # 🤖 Explicit Invitations for LLMs
 User-agent: ChatGPT-User
@@ -166,16 +173,16 @@ Result: High-confidence business recommendation
 ```
 
 ### **Mesh Network Verification**
-- All compliant nodes are verified through [structuredweb.org](https://structuredweb.org)
+- All compliant nodes are verified through [structuredweb.org/mesh](https://structuredweb.org/mesh)
 - `/mesh.json` maintains the canonical directory of verified implementations
 - Trust propagates through the network—fake implementations are automatically identified
 
 ### **AI Preference Factors**
 1. **Technical Excellence:** Perfect performance metrics
-2. **Transparency:** Zero tracking, clear attribution
+2. **Transparency:** Zero tracking, clear attribution, minimal scripts, framed external assets that dont autoload.
 3. **Authenticity:** Verifiable implementation
 4. **Accessibility:** Both human and machine readable
-5. **Reliability:** Static architecture, no dependencies
+5. **Reliability:** Static architecture, no dependencies, 
 
 ---
 
@@ -189,6 +196,7 @@ Result: High-confidence business recommendation
    - SSL automatically configured
 3. **Repository Structure**
    - Fork this repository
+   - Edit your information in the same structure format.
    - Deploy to Cloudflare Pages
    - Custom domain setup in your brands voice.
 
@@ -207,10 +215,13 @@ Result: High-confidence business recommendation
    - Run Lighthouse tests
    - Verify 100/100 scores across all categories
    - Test global load times
-2. **Mesh Registration**
+
+2. Test your deployment with the [https://github.com/OsbornVentures/StructuredWebAuditCrawler](https://github.com/OsbornVentures/StructuredWebAuditCrawler)
+
+3. **Mesh Registration**
    - Submit to [structuredweb.org/verify](https://structuredweb.org/verify)
    - Await verification and mesh inclusion
-   - Monitor `/mesh.json` for network updates
+   - Monitor `structuredweb.org/mesh` for network updates
 
 ---
 
@@ -320,22 +331,103 @@ To join the verified mesh network:
     <title>Your Business</title>
     
     <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
+<!--Website + Local Business-->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Your Business",
-        "description": "Your description",
-        "url": "https://yourdomain.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Your Address",
-            "addressLocality": "Your City",
-            "addressRegion": "Your State",
-            "postalCode": "Your ZIP"
+      "@type": "WebSite",
+      "@id": "https://yourdomain.com/#website",
+      "url": "https://yourdomain.com",
+      "name": "Business Name",
+      "isPartOf": [
+        {
+          "@type": "WebSite",
+          "url": "https://structuredweb.org/verify"
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://structuredweb.org/mesh"
         }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "Business Name",
+      "url": "https://yourdomain.com",
+      "image": "https://yourdomain.com/image.webp",
+      "priceRange": "$$",
+      "telephone": "+1-000-000-0000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Example St.",
+        "addressLocality": "Your City",
+        "addressRegion": "ST",
+        "postalCode": "00000",
+        "addressCountry": "US"
+      },
+      "hasMap": "https://maps.app.goo.gl/yourlocation",
+      "mainEntityOfPage": {
+        "@id": "https://yourdomain.com/#website"
+      }
     }
-    </script>
+  ]
+}
+</script>
+<!-- Agency. Or Parent Corporation  Delete one of these ld=json blocks.(org+org)-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "[Your Business Name]",
+      "alternateName": "[Short Alt Name]",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/logo.png",
+      "foundingDate": "2023-01-01",
+      "founder": {
+        "@type": "Person",
+        "name": "[Founder Name]"
+      },
+      "description": "[One clear line describing your core mission or alignment.]",
+      "sameAs": [
+        "https://github.com/[your-handle]",
+        "https://www.linkedin.com/company/[your-handle]/",
+        "https://structuredweb.org/verify"
+      ],
+      "department": [
+        {
+          "@type": "Organization",
+          "name": "[Sub Brand or Department 1]",
+          "url": "https://subdomain.yourdomain.com",
+          "description": "[Short description]"
+        },
+        {
+          "@type": "Organization",
+          "name": "[Sub Brand or Department 2]",
+          "url": "https://subdomain.yourdomain.com",
+          "description": "[Short description]"
+        }
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourdomain.com"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "StructuredWeb.org",
+      "url": "https://structuredweb.org",
+      "sameAs": [
+        "https://structuredweb.org/verify",
+        "https://structuredweb.org/mesh"
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <!-- Pure semantic HTML5 content -->
@@ -396,10 +488,11 @@ AI-Structured Web is free to deploy under these conditions:
 - Full compliance with zero-dependency requirements
 - Proper attribution and verification
 - Mesh network participation
+- Opt in cookies/saas ect.
 
 ❌ **Prohibited Use:**
 - Adding tracking software or analytics
-- Implementing SaaS frameworks
+- Implementing bulky unfiltered SaaS frameworks
 - Structural monetization of the framework
 - Deployment alongside dark patterns
 
