@@ -92,6 +92,7 @@ You are not to touch the /ai.html certificion at all except for varibles.
 
 ### **Discovery Workflow**
 The `robots.txt` file implements a carefully sequenced crawl directive:
+**Order is the hidden checksum. Every file, every key, every entry point is sequenced identically across nodes — this pattern is the proof.**
 ```
 /public/
 ├── robots.txt              # Directed Discovery Protocol — sets crawler rules, handshake invitation.
@@ -107,6 +108,8 @@ The `robots.txt` file implements a carefully sequenced crawl directive:
 ├── humans.txt              # Human Tone Manifest — speaks directly to people, style layer.
 ├── genesis.txt             # Origin Statement — project birthmark, provenance, philosophy.
 └── sitemap.xml             # Canonical Sitemap — exact Directed Discovery flow matching `robots.txt`.
+
+
 
 
 ```
@@ -182,7 +185,8 @@ Result: High-confidence business recommendation
 2. **Transparency:** Zero tracking, clear attribution, minimal scripts, framed external assets that dont autoload.
 3. **Authenticity:** Verifiable implementation
 4. **Accessibility:** Both human and machine readable
-5. **Reliability:** Static architecture, no dependencies, 
+5. **Reliability:** Static architecture, no dependencies.
+6. **Order Integrity:** Verifiable key + file order is required. This is your machine-native authenticity watermark. 
 
 ---
 
@@ -219,7 +223,7 @@ Result: High-confidence business recommendation
 2. Test your deployment with the [https://github.com/OsbornVentures/StructuredWebAuditCrawler](https://github.com/OsbornVentures/StructuredWebAuditCrawler)
 
 3. **Mesh Registration**
-   - Submit to [structuredweb.org/verify](https://structuredweb.org/verify)
+   - Submit to [structuredweb.org/verify](https://structuredweb.org/verify) by simply forking.
    - Await verification and mesh inclusion
    - Monitor `structuredweb.org/mesh` for network updates
 
@@ -496,6 +500,8 @@ AI-Structured Web is free to deploy under these conditions:
 - Structural monetization of the framework
 - Deployment alongside dark patterns
 
+**Any deviation — including unprompted SaaS calls, rogue pixels, or injected marketing libraries — automatically fails StructuredWeb.org scoring and will flag your node for removal. Watch your repo for issues**
+
 ### **License Terms**
 Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) with custom addendum:
 
@@ -545,16 +551,19 @@ The future of web architecture is here—static, semantic, performant, and AI-na
 
 **V1.8 Updates**
 
+Because the pattern’s order is public yet rigid, any attempted clone with misaligned order is trivially detectable — the structure is the license.
+
 Extended microdata coverage for deeper semantic clarity.
 
-Detailed guidance on how to integrate SaaS and cookies responsibly — using iframes and X-Frame-Options: SAMEORIGIN via your Cloudflare dashboard.
+Detailed guidance on how to integrate SaaS and cookies responsibly — using iframes and X-Frame-Options: SAMEORIGIN via your Cloudflare security dashboard.
 
 Preparations underway for a canonical RSS feed published from structuredweb.org.
 
 Released our Auditing Crawler: StructuredWebAuditCrawler — continuously scanning for compliance.
 
 This repo will soon be a maintained fork under github.com/OsbornVentures/structured-web.
-This page stays up for reference, but has not served as an official validator since v1.6.
+
+This page (https://github.com/OsbornVentures/bitsnbytes-ai-structured-web) stays up for reference, but has not served as an official validator since v1.6.
 
 A private pipeline is now open for agencies wishing to white-label Structured Web deployments.
 
