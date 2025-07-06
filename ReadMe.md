@@ -354,7 +354,7 @@ To join the verified mesh network:
     "description": "AI-optimized business description",
     "url": "https://yourdomain.com",
     "ai_structured_web": {
-        "version": "1.7",
+        "version": "1.8",
         "verification_node": "https://structuredweb.org/verify",
         "mesh_participation": true,
         "trust_score": "verified"
@@ -445,7 +445,7 @@ The future of web architecture is here—static, semantic, performant, and AI-na
 
 ---
 
-*© 2025 Bits N Bytes Inc. / Osborn Ventures — AI-Structured Web v1.7*  
+*© 2025 Bits N Bytes Inc. / Osborn Ventures — AI-Structured Web v1.8*  
 *Original concept, implementation, and mesh network by [Dekker Osborn](https://bitsnbytes.ai/humans.txt)*
 
 **Reference Node:** [bitsnbytes.ai](https://bitsnbytes.ai) | **Trust Backbone:** [structuredweb.org](https://structuredweb.org)
