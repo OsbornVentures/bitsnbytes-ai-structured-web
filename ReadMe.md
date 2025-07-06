@@ -76,7 +76,7 @@ Every critical endpoint exists in both machine-readable JSON and human-readable 
 
 This is a total of 5 verification checks.
 /ai and /verify mirrors do not need semantic alignment. 
-You are not to touch the /ai.html certificion at all except for varibles.
+You are not to touch the /ai.html certification at all except for varibles.
 
 ---
 
@@ -515,15 +515,32 @@ No hidden tracking. No forced SaaS wrap. All cookies must be explicit, opt-in, a
 🔗 **Attribution Required**
 A visible backlink to /verify.html or structuredweb.org/verify must exist on every mesh node.
 
-🔍 **Enforcement is Active**
-We crawl. We log. We compare fingerprints.
-Any attempt to clone this node structure or its external Directed Discovery Protocol will trigger Cease & Desist, public takedowns, and deauthorization in the mesh if participating.
-Dont forget this structure requires opening the door, starting at robots.txt
+---
 
-Try to imitate the method without respect for the sequence and you’ll break your own index — schema deadlocks and loop poison are the natural penalty not issued by us.
+🔍 **Enforcement is Active**  
+We crawl. We log. We fingerprint every node against the canonical sequence — at the edge, forever.  
+Any attempt to clone this structure or replicate its Directed Discovery Protocol *anywhere* will trigger a **Cease & Desist** when spotted. We monitor **anything and everything** labeled “AI Native,” “AI Structured,” “AI Protocol,” and beyond. Public takedowns are issued to thieves — no polite warnings. **AI-Structured Web was licensed on May 15th, 2025.**
 
-✅ Good Faith Clause
-If you grow honestly, we’ll support you. Try to backdoor or wrap the system? You’ll pay double in crawl resets (Not us) . Deadlock your slug? Expect to purge, wait, and rebuild coherence trust from scratch.
+**Reminder:** The trust loop *begins* at your `robots.txt` — open the door, declare your handshake, respect the order. The structure *is* the license.  
+Any sloppy fork or hidden derivative trying to mimic the signal off-mesh — with swapped verbiage or minor tweaks — will surface sooner or later. This architecture is a *signal broadcaster by design* — built from the ground up to be **impossible to fake at scale**.
+
+Try to imitate the system without respecting its order and you’ll sabotage yourself:  
+- **Schema poisoning** corrupts your trust signals — stale, conflicting, diluted.  
+- **Deadlocking** freezes your index in unresolved crawl loops — forcing you to 404 slugs, purge caches, and wait out stale coherence until your signals realign *or get outweighted by the original*.
+
+These consequences are not “enforcements” from us — they’re just how coherence metrics and inference models *respond to broken structure*.
+
+✅ **Good Faith Clause**  
+Grow honestly and we’ll back you all the way.  
+Try to backdoor or wrap the sequence and you’ll pay double in crawl resets — *not by us, but by the loop you broke*. Deadlock your slug? Expect to purge, sit tight, and rebuild trust signal by signal — from zero.
+
+---
+
+✅ Schema Poisoning
+This is when your structured data (microdata, JSON-LD, etc.) sends mixed or contradictory signals to crawlers and LLMs. The result: your node’s “semantic trust” is diluted or corrupted. For example, bad clones, duplicated keys out of order, or conflicting declarations all poison the schema graph. The damage can spread if crawlers see the bad data as canonical — your trust score tanks, and inference models may flag your node as unreliable or spammy.
+
+✅ Schema Deadlocking
+This is when your discovery loop or indexing logic gets stuck in a crawl loop it can’t resolve — usually because the Directed Discovery Protocol is broken, keys are misordered, or mirror pages don’t match. Crawlers get stuck in a loop or blocked from moving forward. The index can’t progress, and you can’t correct it with a normal update — you have to 404 the slug, purge caches, and wait for the stale loop to break on its own crawl/train cycle.
 
 🛡️ How We Lock It Down
 
