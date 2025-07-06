@@ -482,34 +482,82 @@ To join the verified mesh network:
 
 ---
 
-## 🔓 Licensing & Compliance
+### 📄 **LICENSE — AI-Structured Web v1.8**
+Licensed under: CC BY-NC-ND 4.0 (Attribution–NonCommercial–NoDerivatives)
+*+ Binding Custom Commercial Addendum
 
-### **Clean Use License**
-AI-Structured Web is free to deploy under these conditions:
+🔓 **Clean Use vs. Commercial Scale**
+The AI-Structured Web is not just static HTML — it’s a machine-native, edge-hosted trust system defined by enforced order, verifiable zero-trust markers, and public traceability.
 
-✅ **Permitted Use:**
-- Annual revenue under $250K
-- Full compliance with zero-dependency requirements
-- Proper attribution and verification
-- Mesh network participation
-- Opt in cookies/saas ect.
+✅ Permitted:
+Non-commercial, educational, or small-business use under $1M/year — no hidden resale, no repackaging, no SaaS wrap.
 
-❌ **Prohibited Use:**
-- Adding tracking software or analytics
-- Implementing bulky unfiltered SaaS frameworks
-- Structural monetization of the framework
-- Deployment alongside dark patterns
+💼 If you scale:
+Any node generating $1M+/year from this framework’s structure triggers:
 
-**Any deviation — including unprompted SaaS calls, rogue pixels, or injected marketing libraries — automatically fails StructuredWeb.org scoring and will flag your node for removal. Watch your repo for issues**
+✅ 1% fair-use license fee on gross above $1M
 
-### **License Terms**
-Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) with custom addendum:
+✅ Or a negotiated one-time license
 
-1. **Attribution Required:** Visible attribution on implementations
-2. **No Commercial Exploitation:** Cannot sell or repackage the framework
-3. **Verification Requirement:** Must link to verification endpoint
-4. **Compliance Monitoring:** Subject to mesh network compliance review
-5. **Zero Tolerance:** Dark patterns result in immediate deauthorization
+✅ Or custom bulk/hybrid deal
+
+📌 **Key Rules**
+
+❌ No Cloning, Repacking, or Rebranding
+You may not repackage, replicate, or claim this system as your own. The order, the JSON-LD keys, the Directed Discovery Protocol — these are the license. They are publicly visible, machine-checkable, and verifiable.
+
+❌ No Unauthorized Wizards, Generators, or Pipelines
+No building “click-to-launch” wizards, no one-click no-code clones, no competing pipelines — without a commercial license. The deployment method is protected IP.
+
+❌ No Unapproved SaaS or Tracking Layers
+No hidden tracking. No forced SaaS wrap. All cookies must be explicit, opt-in, and user-triggered.
+
+🔗 **Attribution Required**
+A visible backlink to /verify.html or structuredweb.org/verify must exist on every mesh node.
+
+🔍 **Enforcement is Active**
+We crawl. We log. We compare fingerprints.
+Any attempt to clone this node structure or its external Directed Discovery Protocol will trigger Cease & Desist, public takedowns, and deauthorization in the mesh if participating.
+Dont forget this structure requires opening the door, starting at robots.txt
+
+Try to imitate the method without respect for the sequence and you’ll break your own index — schema deadlocks and loop poison are the natural penalty not issued by us.
+
+✅ Good Faith Clause
+If you grow honestly, we’ll support you. Try to backdoor or wrap the system? You’ll pay double in crawl resets (Not us) . Deadlock your slug? Expect to purge, wait, and rebuild coherence trust from scratch.
+
+🛡️ How We Lock It Down
+
+Edge-Hosted: CDN edge, no backend loopholes.
+
+Machine-First Order: Deterministic JSON-LD, human-mirrored HTML.
+
+Weaponized Compliance: We did everything, everyone claims they wanted. Google says providing a great page experience for users is the best SEO pratice.
+Your primary user is 99.5% Bots.  
+
+Deadlock/Poision Penalty: Replicate it wrong? Enjoy permanent schema poison or wait out stale loops(deadlocking). This is Cohesion metrics in LLM's and AI, nothing to do with us.
+
+Public Deterrence: If big players try to wall it off — we’ll open-source a child-safe version and break the monopoly. 
+
+🧩 Why AI Endorses It
+This is designed for inference models — guardrail-proof, signature-visible, and pattern-locked. Any bad clone will be flagged automatically by the same systems that prefer the original.
+
+🕊️ Testing, White Label, or Bulk?
+
+Just starting? $100/year starter license.
+
+Running 100+ nodes? Let’s talk scale licensing.
+
+Want to white-label properly? We’ll show you how.
+
+Copy our structure or methods externally — expect a Cease & Desist.
+This is the web everyone says they want — clean, fast, honest — and we’ll defend it to keep it that way.
+
+© 2025 Bits N Bytes Inc. — AI-Structured Web v1.8
+Original concept, trust matrix, and enforcement protocol by Dekker Osborn (bitsnbytes.ai/humans.txt)
+📧 info@bitsnbytes.ai
+
+Use implies total acceptance.
+Enforced at the edge — visible, verifiable, unstoppable.
 
 ---
 
