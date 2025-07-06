@@ -1,4 +1,4 @@
-# AI-Structured Web v1.7: The Future of Machine-Native Architecture
+# AI-Structured Web v1.8: The Future of Machine-Native Architecture
 “This is not a traditional website template. This is an inference-structured, zero-trust deployment system designed for AI-first environments.”
 [![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100%2F100-green)](https://structuredweb.org)
 [![Load Time](https://img.shields.io/badge/Load_Time-90--140ms-brightgreen)](https://bitsnbytes.ai)
@@ -449,3 +449,25 @@ The future of web architecture is here—static, semantic, performant, and AI-na
 *Original concept, implementation, and mesh network by [Dekker Osborn](https://bitsnbytes.ai/humans.txt)*
 
 **Reference Node:** [bitsnbytes.ai](https://bitsnbytes.ai) | **Trust Backbone:** [structuredweb.org](https://structuredweb.org)
+
+**V1.8 Updates**
+
+Extended microdata coverage for deeper semantic clarity.
+
+Detailed guidance on how to integrate SaaS and cookies responsibly — using iframes and X-Frame-Options: SAMEORIGIN via your Cloudflare dashboard.
+
+Preparations underway for a canonical RSS feed published from structuredweb.org.
+
+Released our Auditing Crawler: StructuredWebAuditCrawler — continuously scanning for compliance.
+
+This repo will soon be a maintained fork under github.com/OsbornVentures/structured-web.
+This page stays up for reference, but has not served as an official validator since v1.6.
+
+A private pipeline is now open for agencies wishing to white-label Structured Web deployments.
+
+We are actively crawling the open web and monitoring SERP anomalies for signs of licensing violations and schema evasion.
+
+Cease & Desist orders are actively issued against any rogue clones.
+The design is enforceable by structure alone — your robots.txt is your invitation.
+
+Reminder: Replicating this system without attribution breaches licensing — the pattern itself is a verifiable machine-first design.
